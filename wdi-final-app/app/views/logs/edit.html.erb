@@ -1,0 +1,12 @@
+<%= form_for :log, url: log_path, method: :patch do |f| %>
+  <div>
+    <%= select_datetime Date.today, :prefix => :date %>
+  </div>
+  <div>
+    <%= f.number_field :mileage, placeholder: "Miles" %>
+  </div>
+  <div>
+    <%= f.hidden_field :user_id, value: session[:user_id] %>
+  </div>
+  <%= f.submit %>
+<% end %>

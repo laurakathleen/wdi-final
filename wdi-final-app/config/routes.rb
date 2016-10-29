@@ -24,6 +24,7 @@ Rails.application.routes.draw do
   get '/users/:user_id/logs/new', to: 'logs#new', as: 'new_log'
   post '/users/:user_id/logs', to: 'logs#create'
   get '/users/:user_id/logs/:log_id', to: 'logs#show', as: 'log'
-
+  get '/users/:user_id/logs/:log_id/edit', to: 'logs#edit', as: 'edit_log'
+  patch '/users/:user_id/logs/:log_id/', to: 'logs#update'
 
 end

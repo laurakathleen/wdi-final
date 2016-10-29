@@ -4,3 +4,7 @@ Welcome, <%= @user.first_name %>!
 	<%= link_to "See all teams", teams_path %>
 	<br>
 	<%= link_to "See my teams", user_teams_path(@user) %>
+	<br>
+	<%= link_to "See my logs", user_logs_path(@user) %>
+	<br>
+	<%= link_to "Add a new log", new_log_path(@user) %>

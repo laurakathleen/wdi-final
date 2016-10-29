@@ -2,9 +2,9 @@
 <br>
 
 <% @teams.each do |team| %>
+<% if current_user && current_user.branch == team.branch && current_user.start_location == team.start_location && current_user.end_location == team.end_location%>
   <div>
     <h3><%= team.name %></h3>
-    <% if current_user %>
       <%= button_to "Join", team_users_path(team) %>
     <% end %>
   </div>

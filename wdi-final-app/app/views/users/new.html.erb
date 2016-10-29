@@ -13,5 +13,20 @@ User Sign Up
   <div>
     <%= f.password_field :password, placeholder: "Password" %>
   </div>
+  <div>
+    Choose branch of military:
+    <select name="user[branch]" id="military-branch">
+    <option value="Air Force">Air Force</option>
+    <option value="Army">Army</option>
+    <option value="Navy">Navy</option>
+    <option value="Marines">Marines</option>
+  </select>
+  </div>
+  <div>
+    <%= f.text_field :start_location, placeholder: "Home Base" %>
+  </div>
+  <div>
+    <%= f.text_field :end_location, placeholder: "Deployment Location" %>
+  </div>
   <%= f.submit "Sign Up" %>
 <% end %>

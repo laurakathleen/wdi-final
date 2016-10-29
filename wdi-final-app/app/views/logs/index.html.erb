@@ -1,9 +1,12 @@
 <ul>
 <% @logs.each do |log| %>
-  <div>
+  <div id="log">
     <li>ID: <%= log.id %>
+    	<br>
     	DATE: <%= log.date %>
-    	MILES: <%= log.mileage %></li>
+    	<br>
+    	MILES: <%= log.mileage %>
+    	</li>
+   </div>
     <% end %>
-  </div>
 </ul>

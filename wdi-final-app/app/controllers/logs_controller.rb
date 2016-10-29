@@ -28,7 +28,7 @@ class LogsController < ApplicationController
 		log_id = params[:log_id]
 		@log = Log.find_by_id(log_id)
 		@log.update_attributes(log_params)
-		redirect_to user_logs_path
+		redirect_to log_path
 	end
 
 	def destroy

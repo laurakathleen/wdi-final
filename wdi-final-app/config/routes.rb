@@ -12,10 +12,11 @@ Rails.application.routes.draw do
   post '/sessions', to: 'sessions#create'
 
   get '/teams', to: 'teams#index'
-  get '/teams/new', to: 'teams#new', as: 'new_team'
+  get '/teams/new', to: 'teams#new', as: 'new_teams'
   post '/teams', to:'teams#create'
   get '/teams/:team_id', to: 'teams#show', as: 'team'
 
   get '/users/:user_id/teams', to: 'team_users#index', as: 'user_teams'
   post '/teams/:team_id/users', to: 'team_users#create', as: 'team_users'
+  get '/leave', to: 'team_users#leave', as: 'leave_team'
 end

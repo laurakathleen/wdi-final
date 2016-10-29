@@ -1,3 +1,6 @@
 <div>
 Welcome, <%= @user.first_name %>!
 </div>
+	<%= link_to "See all teams", teams_path %>
+	<br>
+	<%= link_to "See my teams", user_teams_path(@user) %>

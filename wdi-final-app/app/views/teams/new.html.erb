@@ -1,9 +1,14 @@
 <%= form_for @team do |f| %>
   <div>
-    <%= f.text_field :name, placeholder: " Team Name" %>
+    <select name="team[branch]" id="military-branch">
+    <option value="Air Force">Air Force</option>
+    <option value="Army">Army</option>
+    <option value="Navy">Navy</option>
+    <option value="Marines">Marines</option>
+  </select>
   </div>
   <div>
-    <%= f.text_field :branch, placeholder: "Branch of Service" %>
+    <%= f.text_field :name, placeholder: " Team Name" %>
   </div>
   <div>
     <%= f.text_field :start_location, placeholder: "Home Base" %>
@@ -12,7 +17,25 @@
     <%= f.text_field :end_location, placeholder: "Deployment Location" %>
   </div>
   <div>
-    <%= f.number_field :months, placeholder: "Expected deployment length (in months)" %>
+    <select name="team[months]" id="deployment-length">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+      <option value="11">11</option>
+      <option value="12">12</option>
+      <option value="13">13</option>
+      <option value="14">14</option>
+      <option value="15">15</option>
+      <option value="16">16</option>
+    </select>
+    months
   </div>
   <div>
     <%= f.number_field :goal, placeholder: "Mileage Goal" %>

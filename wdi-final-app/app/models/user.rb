@@ -5,4 +5,7 @@ class User < ApplicationRecord
 		@user = User.find_by({username: params[:username]})
 		@user ? @user.authenticate(params[:password]) : false
 	end
+
+	has_many :team_users, dependent: :destroy
+	has_many :teams, through: :team_users
 end

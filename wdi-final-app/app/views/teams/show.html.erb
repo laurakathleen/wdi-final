@@ -6,11 +6,26 @@ ID: <%= @team.id %>
 Branch: <%= @team.branch %>
 <br>
 Goal: <%= @team.goal %>
-
+<br>
+<div id="total">
+</div>
+<br>
 <ul>
   <% @team.users.each do |tm| %>   
-    <li><%= tm.first_name %></li>
+    <li><%= tm.first_name %> <span><%= tm.logs.sum(:mileage) %></span> miles</li>
   <% end %>
 </ul>
+
+<script>
+console.log("working!");
+
+var sum = 0;
+$('span').each(function() {
+	sum += +$(this).text()||0;
+});
+
+$("#total").text(sum);
+
+</script>
 
 

@@ -5,9 +5,15 @@ ID: <%= @team.id %>
 <br>
 Branch: <%= @team.branch %>
 <br>
-Goal: <%= @team.goal %>
+Goal: <div id="goal"><%= @team.goal %></div>
 <br>
-<div id="total">
+Miles to go:
+<div class="difference"></div>
+<br>
+<div id="mileage-count">
+	<h2>Total Team Mileage: </h2>
+	<div id="total">
+	</div>
 </div>
 <br>
 <ul>
@@ -20,11 +26,15 @@ Goal: <%= @team.goal %>
 console.log("working!");
 
 var sum = 0;
+var difference;
+var goal;
 $('span').each(function() {
 	sum += +$(this).text()||0;
 });
-
-$("#total").text(sum);
+goal = $('#goal');
+difference = goal - sum;
+$('#total').text(sum);
+$('.difference').text(difference);
 
 </script>
 

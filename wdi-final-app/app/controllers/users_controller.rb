@@ -10,6 +10,7 @@ class UsersController < ApplicationController
 
 	def create
 	    @user = User.create(user_params)
+	    @user.date = params[date]
 	    login(@user)
 	    redirect_to @user
   	end

@@ -1,0 +1,21 @@
+<%= form_for @team do |f| %>
+  <div>
+    <%= f.text_field :name, placeholder: " Team Name" %>
+  </div>
+  <div>
+    <%= f.text_field :branch, placeholder: "Branch of Service" %>
+  </div>
+  <div>
+    <%= f.text_field :start_location, placeholder: "Home Base" %>
+  </div>
+  <div>
+    <%= f.text_field :end_location, placeholder: "Deployment Location" %>
+  </div>
+  <div>
+    <%= f.number_field :months, placeholder: "Expected deployment length (in months)" %>
+  </div>
+  <div>
+    <%= f.number_field :goal, placeholder: "Mileage Goal" %>
+  </div>
+  <%= f.submit %>
+<% end %>

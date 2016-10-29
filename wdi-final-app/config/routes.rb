@@ -11,4 +11,7 @@ Rails.application.routes.draw do
   get '/logout', to: 'sessions#destroy'
   post '/sessions', to: 'sessions#create'
 
+  get '/teams', to: 'teams#index'
+  get '/teams/new', to: 'teams#new', as: 'new_team'
+  post '/teams', to:'teams#create'
 end

@@ -18,11 +18,12 @@ Rails.application.routes.draw do
 
   get '/users/:user_id/teams', to: 'team_users#index', as: 'user_teams'
   post '/teams/:team_id/users', to: 'team_users#create', as: 'team_users'
-  get '/leave', to: 'team_users#leave', as: 'leave_team'
+  get '/teams/:team_id/users/show', to: 'teams#show', as: 'users_in_a_team'
 
   get '/users/:user_id/logs/', to: 'logs#index', as: 'user_logs'
   get '/users/:user_id/logs/new', to: 'logs#new', as: 'new_log'
   post '/users/:user_id/logs', to: 'logs#create'
-  
-  
+  get '/users/:user_id/logs/:log_id', to: 'logs#show', as: 'log'
+
+
 end

@@ -14,6 +14,11 @@ class LogsController < ApplicationController
 		redirect_to user_logs_path
 	end
 
+	def show
+		@log = Log.find_by_id(params[:log_id])
+		@user = @log.user
+	end
+
 	private
 
 	def log_params

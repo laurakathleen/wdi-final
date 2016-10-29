@@ -1,6 +1,6 @@
 <%= form_for :log, url: user_logs_path, method: :post do |f| %>
   <div>
-    <%= f.text_field :date, placeholder: "Date" %>
+    <%= select_datetime Date.today, :prefix => :date %>
   </div>
   <div>
     <%= f.number_field :mileage, placeholder: "Miles" %>

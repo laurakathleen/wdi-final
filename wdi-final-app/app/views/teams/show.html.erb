@@ -6,3 +6,9 @@ ID: <%= @team.id %>
 Branch: <%= @team.branch %>
 <br>
 Goal: <%= @team.goal %>
+
+<ul>
+  <% @team.users.each do |tm| %>   
+    <li><%= tm.first_name %></li>
+  <% end %>
+</ul>

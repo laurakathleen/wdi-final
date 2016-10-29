@@ -1,0 +1,7 @@
+<div><%= @user.first_name %> is a member of the following teams</div>
+
+<ul>
+  <% @teams.each do |team| %>   
+    <li><%= team.name %></li>
+  <% end %>
+</ul>

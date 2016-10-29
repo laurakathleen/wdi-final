@@ -1,0 +1,12 @@
+<%= form_for :log, url: user_logs_path, method: :post do |f| %>
+  <div>
+    <%= f.text_field :date, placeholder: "Date" %>
+  </div>
+  <div>
+    <%= f.number_field :mileage, placeholder: "Miles" %>
+  </div>
+  <div>
+    <%= f.hidden_field :user_id, value: session[:user_id] %>
+  </div>
+  <%= f.submit %>
+<% end %>

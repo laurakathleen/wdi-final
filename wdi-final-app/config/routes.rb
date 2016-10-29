@@ -21,4 +21,8 @@ Rails.application.routes.draw do
   get '/leave', to: 'team_users#leave', as: 'leave_team'
 
   get '/users/:user_id/logs/', to: 'logs#index', as: 'user_logs'
+  get '/users/:user_id/logs/new', to: 'logs#new', as: 'new_log'
+  post '/users/:user_id/logs', to: 'logs#create'
+  
+  
 end

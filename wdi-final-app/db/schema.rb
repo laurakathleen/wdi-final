@@ -10,10 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161029022122) do
+ActiveRecord::Schema.define(version: 20161029163816) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "logs", force: :cascade do |t|
+    t.datetime "date"
+    t.integer  "mileage"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer  "user_id"
+    t.index ["user_id"], name: "index_logs_on_user_id", using: :btree
+  end
 
   create_table "team_users", force: :cascade do |t|
     t.integer  "user_id"
@@ -42,8 +51,12 @@ ActiveRecord::Schema.define(version: 20161029022122) do
     t.string   "password_digest"
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
+    t.string   "start_location"
+    t.string   "end_location"
+    t.string   "branch"
   end
 
+  add_foreign_key "logs", "users"
   add_foreign_key "team_users", "teams"
   add_foreign_key "team_users", "users"
 end

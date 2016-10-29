@@ -19,4 +19,6 @@ Rails.application.routes.draw do
   get '/users/:user_id/teams', to: 'team_users#index', as: 'user_teams'
   post '/teams/:team_id/users', to: 'team_users#create', as: 'team_users'
   get '/leave', to: 'team_users#leave', as: 'leave_team'
+
+  get '/users/:user_id/logs/', to: 'logs#index', as: 'user_logs'
 end

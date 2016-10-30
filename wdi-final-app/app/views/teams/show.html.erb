@@ -1,4 +1,4 @@
-This is the home page for Team <%= @team.name %>!
+This is the home page for Team <span id="team-name"><%= @team.name %></span>!
 <br>
 Basic Info:
 ID: <%= @team.id %>
@@ -18,7 +18,7 @@ Miles to go:
 <br>
 <ul>
   <% @team.users.each do |tm| %>   
-    <li><%= tm.first_name %> <span><%= tm.logs.sum(:mileage) %></span> miles</li>
+    <li id="teammate-name"><%= tm.first_name %> <span id="teammate-total"><%= tm.logs.sum(:mileage) %></span> miles</li>
   <% end %>
 </ul>
 
@@ -39,44 +39,41 @@ difference = goal - sum;
 $('#total').text(sum);
 $('.difference').text(difference);
 
+var teamName = document.getElementById('team-name');
+console.log(teamName);
 // Highcharts
-$(function () { 
-    var myChart = Highcharts.chart('container', {
+$(function () {
+    Highcharts.chart('container', {
         chart: {
             type: 'bar'
         },
         title: {
-            text: 'Fruit Consumption'
+            text: 'Total Team Mileage'
         },
         xAxis: {
-            categories: ['Apples', 'Bananas', 'Oranges']
+            categories: null
         },
         yAxis: {
+        	min: 0,
+        	max: 1500,
             title: {
-                text: 'Fruit eaten'
+                text: 'Miles'
+            }
+        },
+        legend: {
+            reversed: false
+        },
+        plotOptions: {
+            series: {
+                stacking: 'normal'
             }
         },
         series: [{
-            name: 'Jane',
-            data: [1, 0, 4]
-        }, {
-            name: 'John',
-            data: [5, 7, 3]
+            name: [teamName],
+            data: [sum]
         }]
     });
 });
 
-var chart1; // globally available
-$(function() {
-       chart1 = Highcharts.stockChart('container', {
-         rangeSelector: {
-            selected: 1
-         },
-         series: [{
-            name: 'USD to EUR',
-            data: usdtoeur // predefined JavaScript array
-         }]
-      });
-   });
 </script>
 

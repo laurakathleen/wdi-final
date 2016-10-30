@@ -39,8 +39,8 @@ difference = goal - sum;
 $('#total').text(sum);
 $('.difference').text(difference);
 
-var teamName = document.getElementById('team-name');
-console.log(teamName);
+var teamName = $('#team-name').text();
+console.log(goal);
 // Highcharts
 $(function () {
     Highcharts.chart('container', {

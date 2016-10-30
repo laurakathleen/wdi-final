@@ -23,7 +23,7 @@ Miles to go:
 </ul>
 
 <!-- HighCharts -->
-<div id="container" style="width:100%; height:400px;"></div>
+<div id="team-chart-container" style="width:100%; height:400px;"></div>
 
 <script>
 console.log("working!");
@@ -57,7 +57,7 @@ $('#teammate-info').each(function(index, value){
 });
 // Highcharts
 $(function () {
-    Highcharts.chart('container', {
+    Highcharts.chart('team-chart-container', {
         chart: {
             type: 'bar'
         },

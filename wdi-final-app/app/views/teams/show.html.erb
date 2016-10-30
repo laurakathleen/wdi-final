@@ -34,7 +34,7 @@ var goal;
 $('span').each(function() {
 	sum += +$(this).text()||0;
 });
-goal = $('#goal');
+goal = $('#goal').text();
 difference = goal - sum;
 $('#total').text(sum);
 $('.difference').text(difference);

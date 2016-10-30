@@ -18,7 +18,7 @@ Miles to go:
 <br>
 <ul id="teammate-info">
   <% @team.users.each do |tm| %>   
-    <li><span class="teammate-name"><%= tm.first_name %></span>: <span id="teammate-total"><%= tm.logs.sum(:mileage) %></span> miles</li>
+    <li><span class="teammate-name"><%= tm.first_name %></span> <span id="teammate-total"><%= tm.logs.sum(:mileage) %></span></li>
   <% end %>
 </ul>
 
@@ -42,9 +42,19 @@ $('.difference').text(difference);
 var teamName = $('#team-name').text();
 var teammateName = $('.teammate-name').text();
 var allNames = [];
+var teammateTotal = $('#teammate-total').text();
+var teammateInfo = $('#teammate-info');
 for (var i=0; i<teammateName.length; i++){
     allNames.push(teammateName[i]);
 }
+console.log(allNames);
+
+var miles = [];
+var names = [];
+var info;
+$('#teammate-info').each(function(index, value){
+	console.log(info = $(this).text());
+});
 // Highcharts
 $(function () {
     Highcharts.chart('container', {

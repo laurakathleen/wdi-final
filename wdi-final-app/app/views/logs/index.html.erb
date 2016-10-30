@@ -3,12 +3,10 @@
   <div id="log">
     <li>ID: <%= log.id %>
     	<br>
-    	DATE: <%= log.date %>
+    	<%= log.created_at.strftime("%A %b %d, %Y") %>
     	<br>
-    	MILES: <%= log.mileage %>
+    	<%= log.mileage %> miles
     	</li>
    </div>
     <% end %>
 </ul>
-
-<%= DateTime.new.to_date %>

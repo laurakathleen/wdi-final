@@ -7,14 +7,6 @@
 <div>
 Your total mileage: <span id="user-total"><%= @user.logs.sum(:mileage) %></span> miles
 </div>
-<div>
-	<%= @user.logs.sum(:mileage) %>
-</div>
-	<%= link_to "See all teams", teams_path %>
-	<br>
-	<%= link_to "See my teams", user_teams_path(@user) %>
-	<br>
-	<%= link_to "Add a new log", new_log_path(@user) %>
 
 	<!-- HighCharts -->
 <div id="user-chart-container" style="width:100%; height:400px;"></div>

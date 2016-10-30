@@ -22,7 +22,7 @@ Rails.application.routes.draw do
 
   get '/users/:user_id/logs/', to: 'logs#index', as: 'user_logs'
   get '/users/:user_id/logs/new', to: 'logs#new', as: 'new_log'
-  post '/users/:user_id/logs', to: 'logs#create'
+  post '/users/:user_id/', to: 'logs#create'
   get '/users/:user_id/logs/:log_id', to: 'logs#show', as: 'log'
   get '/users/:user_id/logs/:log_id/edit', to: 'logs#edit', as: 'edit_log'
   patch '/users/:user_id/logs/:log_id/', to: 'logs#update'

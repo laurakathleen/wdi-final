@@ -16,9 +16,9 @@ Miles to go:
 	</div>
 </div>
 <br>
-<ul>
+<ul id="teammate-info">
   <% @team.users.each do |tm| %>   
-    <li id="teammate-name"><%= tm.first_name %> <span id="teammate-total"><%= tm.logs.sum(:mileage) %></span> miles</li>
+    <li><span class="teammate-name"><%= tm.first_name %></span>: <span id="teammate-total"><%= tm.logs.sum(:mileage) %></span> miles</li>
   <% end %>
 </ul>
 
@@ -40,7 +40,11 @@ $('#total').text(sum);
 $('.difference').text(difference);
 
 var teamName = $('#team-name').text();
-console.log(goal);
+var teammateName = $('.teammate-name').text();
+var allNames = [];
+for (var i=0; i<teammateName.length; i++){
+    allNames.push(teammateName[i]);
+}
 // Highcharts
 $(function () {
     Highcharts.chart('container', {
@@ -55,7 +59,7 @@ $(function () {
         },
         yAxis: {
         	min: 0,
-        	max: 1500,
+        	max: goal,
             title: {
                 text: 'Miles'
             }
@@ -69,7 +73,7 @@ $(function () {
             }
         },
         series: [{
-            name: [teamName],
+            name: [teammateName],
             data: [sum]
         }]
     });

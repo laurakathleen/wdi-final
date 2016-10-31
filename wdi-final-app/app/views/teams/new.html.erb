@@ -1,45 +1,50 @@
-
-<%= form_for @team do |f| %>
-  <div>
-    <select name="team[branch]" id="military-branch">
-    <option value="Air Force">Air Force</option>
-    <option value="Army">Army</option>
-    <option value="Navy">Navy</option>
-    <option value="Marines">Marines</option>
-  </select>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-4 offset-md-4 col-xs-12">
+      <%= form_for @team do |f| %>
+        <div class="form-group">
+          <select name="team[branch]" id="military-branch">
+          <option value="Air Force">Air Force</option>
+          <option value="Army">Army</option>
+          <option value="Navy">Navy</option>
+          <option value="Marines">Marines</option>
+        </select>
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control"<%= f.text_field :name, placeholder: "Team Name" %>
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control"<%= f.text_field :start_location, placeholder: "Home Base" %>
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control"<%= f.text_field :end_location, placeholder: "Deployment Location" %>
+        </div>
+        <div class="form-group">
+          <select name="team[months]" id="deployment-length">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+          </select>
+          months
+        </div>
+        <div class="form-group">
+          <input type="number" class="form-control"<%= f.number_field :goal, placeholder: "Mileage Goal" %>
+        </div>
+        <%= f.submit %>
+      <% end %>
+    </div>
   </div>
-  <div>
-    <%= f.text_field :name, placeholder: "Team Name" %>
-  </div>
-  <div>
-    <%= f.text_field :start_location, placeholder: "Home Base" %>
-  </div>
-  <div>
-    <%= f.text_field :end_location, placeholder: "Deployment Location" %>
-  </div>
-  <div>
-    <select name="team[months]" id="deployment-length">
-      <option value="1">1</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5</option>
-      <option value="6">6</option>
-      <option value="7">7</option>
-      <option value="8">8</option>
-      <option value="9">9</option>
-      <option value="10">10</option>
-      <option value="11">11</option>
-      <option value="12">12</option>
-      <option value="13">13</option>
-      <option value="14">14</option>
-      <option value="15">15</option>
-      <option value="16">16</option>
-    </select>
-    months
-  </div>
-  <div>
-    <%= f.number_field :goal, placeholder: "Mileage Goal" %>
-  </div>
-  <%= f.submit %>
-<% end %>
+</div>

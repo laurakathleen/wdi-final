@@ -1,13 +1,16 @@
-<%= form_for :log, url: user_path, method: :post do |f| %>
-  <div class="form-group">
-    <%= f.datetime_select :date, :order => [:day, :month, :year], :default => Date.today %>
-  </div>
-  <div class="form-group" id="new-log-mileage">
-    <input type="number" class="form-control"<%= f.number_field :mileage, placeholder: "Miles" %>
-  </div>
-  <div class="form-group">
-    <%= f.hidden_field :user_id, value: session[:user_id] %>
-  </div>
-  <%= f.submit %>
-<% end %>
+<div id="new-log-form">
+  <%= form_for :log, url: user_path, method: :post do |f| %>
+    <div class="form-group">
+      <%= f.datetime_select :date, :order => [:day, :month, :year], :default => Date.today %>
+    </div>
+    <div class="form-group" id="new-log-form-mileage">
+      <input type="number" class="form-control"<%= f.number_field :mileage, placeholder: "Miles" %>
+    </div>
+    <div class="form-group">
+      <%= f.hidden_field :user_id, value: session[:user_id] %>
+    </div>
+    <%= f.submit %>
+  <% end %>
+</div>
+
 

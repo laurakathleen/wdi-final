@@ -1,18 +1,22 @@
 <%= render "tabs" %>
+<div class="container-fluid">
+  <div class="row">
+   <div class="col-md-10 offset-md-1 col-xs-12 user-page" id="user-show-home">
+    <div>
+    <%= @user.first_name %> total mileage: <span id="user-total"><%= @user.logs.sum(:mileage) %></span> miles
+    </div>
+    <div>
+    <%= @user.logs.where(date: Date.today).sum(:mileage) %>
+    </div>
 
-<div class="user-page" id="user-show-home">
+    	<!-- HighCharts -->
+    <div id="user-chart-container"></div>
+    </div>
 
-
-
-<div>
-Your total mileage: <span id="user-total"><%= @user.logs.sum(:mileage) %></span> miles
+    <%= render :partial => 'logs/new', :object => @log %>
+    </div>
+  </div>
 </div>
-
-	<!-- HighCharts -->
-<div id="user-chart-container" style="width:100%; height:400px;"></div>
-</div>
-
-<%= render :partial => 'logs/new', :object => @log %>
 
 <script>
 
@@ -31,7 +35,7 @@ $(function () {
             type: 'bar'
         },
         title: {
-            text: 'My Total Mileage'
+            text: "<%= @user.first_name %>'s Total Mileage"
         },
         xAxis: {
             categories: null

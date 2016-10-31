@@ -1,19 +1,22 @@
 <%= render "tabs" %>
 <div class="container-fluid">
   <div class="row">
-   <div class="col-md-10 offset-md-1 col-xs-12 user-page" id="user-show-home">
-    <div>
-    <%= @user.first_name %>'s total mileage: <span id="user-total"><%= @user.logs.sum(:mileage) %></span> miles
+    <div class="col-md-12 col-xs-12 user-page" id="list-user-info">
+      <p><%= @user.first_name %>'s total mileage: <span id="user-total"><%= @user.logs.sum(:mileage) %></span> miles</p>
+      <p>Total today: <span id="user-daily"><%= @user.logs.where(date: Date.today).sum(:mileage) %></span> miles</p>
     </div>
-    <div>
-    Total today: <span id="user-daily"><%= @user.logs.where(date: Date.today).sum(:mileage) %></span> miles
-    </div>
-    </div>
-    <!-- HighCharts -->
-    <div class="col-md-5 offset-md-1 col-xs-6" id="user-daily-container"></div>
-    <div class="col-md-5 col-xs-6" id="user-total-container"></div>
-    </div>
+  </div>
+  <!-- HighCharts -->
+  <div class="row">
+    <div class="col-md-6 col-xs-8 user-chart" id="user-daily-container"></div>
+    <div class="col-md-6 col-xs-4 user-chart" id="user-total-container"></div>
+  </div>
+</div>
+<div class="container-fluid">
+  <div class="row" id="new-log-form">
+    <div class="col-md-6 offset-col-3 col-xs-12">
     <%= render :partial => 'logs/new', :object => @log %>
+    </div>
   </div>
 </div>
 
@@ -41,7 +44,7 @@ $(function () {
             type: 'bar'
         },
         title: {
-            text: "<%= @user.first_name %>'s Today's Mileage"
+            text: "Today's Mileage"
         },
         xAxis: {
             categories: null

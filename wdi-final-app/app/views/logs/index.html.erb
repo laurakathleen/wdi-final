@@ -1,16 +1,18 @@
 <%= render "./users/tabs" %>
 
-<div class="user-page" id="user-history">
-<ul>
-<% @logs.each do |log| %>
-  <div id="log">
-    <li>ID: <%= log.id %>
-    	<br>
-    	<%= log.created_at.strftime("%A %b %d, %Y") %>
-    	<br>
-    	<%= log.mileage %> miles
-    	</li>
-   </div>
-    <% end %>
-</ul>
+<div class="container-fluid">
+	<div class="row history-top">
+		<ul>
+		<% @logs.each do |log| %>
+		  <div class="col-md-10 offset-md-2 col-xs-12 user-page" id="user-history" id="log">
+		    <li>ID: <%= log.id %>
+		    	<br>
+		    	<%= log.created_at.strftime("%A %b %d, %Y") %>
+		    	<br>
+		    	<%= log.mileage %> miles
+		    	</li>
+		   </div>
+		    <% end %>
+		</ul>
+	</div>
 </div>

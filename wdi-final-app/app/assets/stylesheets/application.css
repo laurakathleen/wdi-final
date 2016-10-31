@@ -14,3 +14,20 @@
  *= require_tree .
  *= require_self
  */
+
+.main-nav {
+	list-style: none;
+}
+
+.main-nav ul li {
+}
+
+main-nav span {
+
+}
+
+#session-msg {
+	position: absolute;
+	color: #fff;
+	text-align: center;
+}

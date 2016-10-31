@@ -1,11 +1,15 @@
-Login
-
-<%= form_for @user, url: "/sessions", method: "post" do |f| %>
-  <div>
-    <%= f.text_field :username, placeholder: "Username" %>
-  </div>
-  <div>
-    <%= f.password_field :password, placeholder: "Password" %>
-  </div>
-  <%= f.submit "Log In" %>
-<% end %>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-4 offset-md-4 col-xs-12">
+		<%= form_for @user, url: "/sessions", method: "post" do |f| %>
+		  <div class="form-group">
+		    <input type="text" class="form-control"<%= f.text_field :username, placeholder: "Username" %>
+		  </div>
+		  <div class="form-group">
+		    <input type="password" class="form-control"<%= f.password_field :password, placeholder: "Password" %>
+		  </div>
+		  <%= f.submit "Log In" %>
+		<% end %>
+		</div>
+	</div>
+</div>

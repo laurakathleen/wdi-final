@@ -2,6 +2,10 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+body {
+	background-color: #2A2E30;
+}
+
 #splash {
 	width: 100%;
 	height: 300px;
@@ -15,7 +19,7 @@
 	margin-top: -2.5em;
 }
 
-#user-chart-container {
+#user-total-container {
 	width: 80%;
 	height: 200px;
 }

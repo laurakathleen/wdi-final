@@ -3,18 +3,17 @@
   <div class="row">
    <div class="col-md-10 offset-md-1 col-xs-12 user-page" id="user-show-home">
     <div>
-    <%= @user.first_name %> total mileage: <span id="user-total"><%= @user.logs.sum(:mileage) %></span> miles
+    <%= @user.first_name %>'s total mileage: <span id="user-total"><%= @user.logs.sum(:mileage) %></span> miles
     </div>
     <div>
-    <%= @user.logs.where(date: Date.today).sum(:mileage) %>
+    Total today: <span id="user-daily"><%= @user.logs.where(date: Date.today).sum(:mileage) %></span> miles
     </div>
-
-    	<!-- HighCharts -->
-    <div id="user-chart-container"></div>
     </div>
-
+    <!-- HighCharts -->
+    <div class="col-md-5 offset-md-1 col-xs-6" id="user-daily-container"></div>
+    <div class="col-md-5 col-xs-6" id="user-total-container"></div>
+    </div>
     <%= render :partial => 'logs/new', :object => @log %>
-    </div>
   </div>
 </div>
 
@@ -22,15 +21,58 @@
 
 var userFirstName = $('#user-first-name').text();
 
+var userDaily = 0;
 var userTotal = 0;
+$('#user-daily').each(function() {
+  userDaily += +$(this).text()||0;
+});
+console.log(userTotal);
+
 $('#user-total').each(function() {
 	userTotal += +$(this).text()||0;
 });
 console.log(userTotal);
 
 // Highcharts
+
 $(function () {
-    Highcharts.chart('user-chart-container', {
+    Highcharts.chart('user-daily-container', {
+        chart: {
+            type: 'bar'
+        },
+        title: {
+            text: "<%= @user.first_name %>'s Today's Mileage"
+        },
+        xAxis: {
+            categories: null
+        },
+        yAxis: {
+          min: 0,
+          max: userDaily + 2,
+            title: {
+                text: 'Miles'
+            }
+        },
+        legend: {
+            reversed: false
+        },
+        plotOptions: {
+            bar: {
+                dataLabels: {
+                  enabled: true
+                }
+            }
+        },
+        series: [{
+            name: [userFirstName],
+            data: [userDaily]
+        }]
+    });
+});
+
+
+$(function () {
+    Highcharts.chart('user-total-container', {
         chart: {
             type: 'bar'
         },

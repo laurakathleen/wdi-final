@@ -24,7 +24,7 @@
               <small><%= name.capitalize %>: <%= msg %></small>
             </p>
           <% end %>
-          </div>
+        </div>
         <ul class="nav navbar-nav navbar-right">
           <li><%= link_to "Home", root_path %></li>
           <% if current_user %>
@@ -39,5 +39,6 @@
     </nav>
 
     <%= yield %>
+  
   </body>
 </html>

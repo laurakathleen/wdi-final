@@ -1,8 +1,8 @@
-<div class="container-fluid">
+<div class="container-fluid form">
   <div class="row">
     <div class="col-md-4 offset-md-4 col-xs-12">
       <%= form_for @user do |f| %>
-        <div class="form-group">
+        <div class="form-group form-placeholder">
           <input type="text" class="form-control"<%= f.text_field :first_name, placeholder: "First Name" %>
         </div>
         <div class="form-group">
@@ -16,7 +16,7 @@
         </div>
         <div class="form-group">
           Choose branch of military:
-          <select name="user[branch]" id="military-branch">
+          <select class="select-field" name="user[branch]" id="military-branch">
           <option value="Air Force">Air Force</option>
           <option value="Army">Army</option>
           <option value="Navy">Navy</option>
@@ -27,7 +27,36 @@
           <input type="text" class="form-control"<%= f.text_field :start_location, placeholder: "Home Base" %>
         </div>
         <div class="form-group">
-          <input type="text" class="form-control"<%= f.text_field :end_location, placeholder: "Deployment Location" %>
+          Choose your home base:
+          <select class="select-field" name="user[start_location]" id="start-location-selector">
+          <option value="Fort Bragg, NC">Fort Bragg, NC</option>
+          <option value="Fort Campbell, KY">Fort Campbell, KY</option>
+          <option value="Fort Hood, TX">Fort Hood, TX</option>
+          <option value="Joint Base Lewis-McChord, WA">Joint Base Lewis-McChord, WA</option>
+          <option value="Fort Benning, GA">Fort Benning, GA</option>
+          <option value="Fort Jackson, SC">Fort Jackson, SC</option>
+          <option value="Camp Pendleton, CA">Camp Pendleton, CA</option>
+          <option value="Camp Lejeune, NC">Camp Lejeune, NC</option>
+          <option value="MCB Hawaii, HI">MCB Hawaii, HI</option>
+          <option value="MCAGCC 29 Palms, CA">MCAGCC 29 Palms, CA</option>
+          <option value="NS Norfolk, VA">NS Norfolk, VA</option>
+          <option value="NS Pearl Harbor-Hickam, HI">NS Pearl Harbor-Hickam, HI</option>
+          <option value="NAS Jacksonville, FL">NAS Jacksonville, FL</option>
+          <option value="NB San Diego, CA">NB San Diego, CA</option>
+          <option value="NB Coronado, CA">NB Coronado, CA</option>
+          <option value="JB Langley-Eustis, VA">JB Langley-Eustis, VA</option>
+          <option value="Hulburt Field, FL">Hulburt Field, FL</option>
+          <option value="Barksdale AFB, LA">Barksdale AFB, LA</option>
+          <option value="Scott AFB, IL">Scott AFB, IL</option>
+        </select>
+        </div>
+        <div class="form-group">
+        Choose the country of deployment:
+          <select class="select-field" name="user[end_location]" id="user-end-location">
+          <option value="Japan">Japan</option>
+          <option value="Afghanistan">Afghanistan</option>
+          <option value="Kuwait">Kuwait</option>
+          </select>
         </div>
         <%= f.submit 'Sign Up' %>
       <% end %>

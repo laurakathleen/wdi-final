@@ -24,3 +24,12 @@ Log.create(date: 2016-10-24, mileage: 20, user_id: 4)
 Log.create(date: 2016-10-24, mileage: 25, user_id: 4)
 Log.create(date: 2016-10-24, mileage: 5, user_id: 6)
 
+Fort Bragg, NC-Japan = {
+	miles: 6963
+},
+Fort Campbell, KY-Japan = {
+	miles: 6618
+},
+Fort Hood, TX-Japan = {
+	miles: 6544
+}

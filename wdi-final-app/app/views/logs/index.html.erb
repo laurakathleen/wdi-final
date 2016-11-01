@@ -5,9 +5,9 @@
 		<ul>
 		<% @logs.each do |log| %>
 		  <div class="col-md-10 offset-md-2 col-xs-12 user-page" id="user-history" id="log">
-		    <li>ID: <%= log.id %>
+		    <li>
 		    	<br>
-		    	<%= log.created_at.strftime("%A %b %d, %Y") %>
+		    	<%= log.updated_at.strftime("%A %b %d, %Y") %>
 		    	<br>
 		    	<%= log.mileage %> miles
 		    	</li>

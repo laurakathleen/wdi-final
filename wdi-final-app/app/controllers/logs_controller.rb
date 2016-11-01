@@ -2,7 +2,7 @@ class LogsController < ApplicationController
 
 	def index
 		@user = User.find_by_id(params[:user_id])
-		@logs = @user.logs.order('date DESC')
+		@logs = @user.logs.order(date: :desc)
 	end
 
 	def new

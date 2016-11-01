@@ -11,8 +11,19 @@
 	list-style: none;
 }
 
-.history-top {
+.calendar-top {
 	margin-top: 1em;
+}
+
+.calendar-container {
+	background-color: #fff;
+	height: 65%;
+}
+
+.calendar-title {
+	padding-left: 11em;
+	padding-right: 11em;
+	font-size: 2em;
 }
 
 #user-history {
@@ -23,4 +34,8 @@
 #user-history li {
 	list-style: none;
 	padding-top: 1em;
+}
+
+.calendar-square {
+	text-align: center;
 }

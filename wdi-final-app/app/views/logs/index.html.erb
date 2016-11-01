@@ -1,18 +1,16 @@
 <%= render "./users/tabs" %>
 
-<div class="container-fluid">
-	<div class="row history-top">
-		<ul>
-		<% @logs.each do |log| %>
-		  <div class="col-md-10 offset-md-2 col-xs-12 user-page" id="user-history" id="log">
-		    <li>
-		    	<br>
-		    	<%= log.updated_at.strftime("%A %b %d, %Y") %>
-		    	<br>
-		    	<%= log.mileage %> miles
-		    	</li>
-		   </div>
-		    <% end %>
-		</ul>
+<div class="container">
+	<div class="row calendar-top">
+		<div class="calendar-container calendar-square col-md-12 col-xs-12">
+			<%= month_calendar events: @logs do |created_at, logs| %>
+  			<%= created_at.strftime("%a %b %d, %Y") %>
+  			<% logs.each do |log| %>
+    			<div id="calendar-square">
+      			<%= link_to log.mileage, @log %> miles
+    			</div>
+  			<% end %>
+			<% end %>
+		</div>
 	</div>
 </div>

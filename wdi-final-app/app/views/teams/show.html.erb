@@ -2,17 +2,12 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-12 col-xs-12 team-show">
-            This is the home page for Team <span id="team-name"><%= @team.name %></span>!
+            <span id="team-name"><%= @team.name %></span>!
             <br>
-            Basic Info:
-            ID: <%= @team.id %>
-            <br>
-            Branch: <%= @team.branch %>
-            <br>
-            Goal: <div id="goal"><%= @team.goal %></div>
+            Goal: <span id="goal"><%= @team.goal %></span>
             <br>
             Miles to go:
-            <div class="difference"></div>
+            <span class="difference"></span>
             <br>
             <div id="mileage-count">
             	<h2>Total Team Mileage: </h2>

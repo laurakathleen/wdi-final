@@ -17,9 +17,11 @@
 
 .main-nav {
 	list-style: none;
+	font-family: 'Quicksand', sans-serif;
 }
 
 .main-nav ul li {
+	font-family: 'Quicksand', sans-serif;
 }
 
 main-nav span {

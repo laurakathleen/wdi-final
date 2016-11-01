@@ -52,11 +52,13 @@ $(function () {
             color: "#fff",
         },
         xAxis: {
-            categories: null
+            categories: null,
+            tickInterval: null
         },
         yAxis: {
           min: 0,
           max: userDaily + 1,
+          tickInterval: null,
             title: {
                 text: "Miles"
             }
@@ -68,7 +70,7 @@ $(function () {
             bar: {
                 dataLabels: {
                   enabled: true
-                }
+                },
             }
         },
         labels: {

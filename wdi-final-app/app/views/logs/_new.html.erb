@@ -1,4 +1,5 @@
 <div id="new-log-form">
+  <h3>Add your miles</h3>
   <%= form_for :log, url: user_path, method: :post do |f| %>
     <div class="form-group">
       <%= f.date_select :date, :order => [:day, :month, :year], :default => Date.today %>

@@ -25,10 +25,16 @@
 .main-nav ul li {
 	font-family: 'Quicksand', sans-serif;
 	font-weight: bolder;
+	text-decoration: none;
 }
 
 #session-msg {
 	position: absolute;
 	color: #fff;
 	text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: #fff;
+	font-family: 'Quicksand', sans-serif;
 }

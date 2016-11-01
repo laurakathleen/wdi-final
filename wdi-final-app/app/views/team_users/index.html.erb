@@ -1,8 +1,7 @@
 <%= render "./users/tabs" %>
 <div class="row">
-	<div class="users-teams col-md-6 offset-md-3 col-xs-12">
+	<div class="users-teams col-md-6 col-md-offset-3 col-xs-12">
 		<div>You are a member of the following teams: </div>
-
 		<ul>
 		  <% @teams.each do |team| %>   
 		    <li>#<%= team.id %>: <%= team.name %></li>

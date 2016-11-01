@@ -17,7 +17,7 @@
 
 .calendar-container {
 	background-color: #fff;
-	height: 65%;
+	height: auto;
 }
 
 .calendar-title {
@@ -38,4 +38,22 @@
 
 .calendar-square {
 	text-align: center;
+	height: 30em;
+}
+
+table td {
+	border: 1px solid black;
+	height: 4.5em;
+	width: 3em;
+}
+
+#calendar-hr {
+	margin-top: -0.15em;
+}
+
+
+/******Logs Show******/
+.log-show-container {
+	background-color: #fff;
+	width: 25%;
 }

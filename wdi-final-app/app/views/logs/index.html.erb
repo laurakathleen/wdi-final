@@ -2,11 +2,12 @@
 
 <div class="container">
 	<div class="row calendar-top">
-		<div class="calendar-container calendar-square col-md-12 col-xs-12">
+		<div class="col-md-12 col-xs-12 calendar-container calendar-square col-md-12 col-xs-12">
 			<%= month_calendar events: @logs do |created_at, logs| %>
-  			<%= created_at.strftime("%a %b %d, %Y") %>
+  			<span id="right"><%= created_at.strftime("%d") %></span>
+  			<hr id="calendar-hr">
   			<% logs.each do |log| %>
-    			<div id="calendar-square">
+    			<div id="calendar-square-ind">
       			<%= link_to log.mileage, @log %> miles
     			</div>
   			<% end %>

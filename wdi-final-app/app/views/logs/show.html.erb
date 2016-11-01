@@ -1,5 +1,7 @@
+<div class="log-show-container">
 Mileage from <%= @log.date %>
 <br>
 Miles: <%= @log.mileage %>
-<%= link_to "Edit", edit_log_path %>
+<%= link_to "Edit", edit_log_path(@log) %>
 <%= button_to "Delete", @log, method: :delete %>
+</div>

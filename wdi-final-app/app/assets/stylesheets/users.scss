@@ -29,7 +29,6 @@ body {
 }
 
 #new-log-form {
-	background-color: #fff;
 	margin-top: 2em;
 	padding-top: 0.75em;
 	padding-bottom: 0.75em;
@@ -48,4 +47,16 @@ body {
 
 .select-field {
 	color: #000;
+}
+/******High Charts******/
+.highcharts-background {
+	fill: #2A2E30;
+}
+
+.highcharts-background tspan {
+	color: #fff;
+}
+
+.highcharts-axis-title {
+	color: #fff;
 }

@@ -1,30 +1,35 @@
-This is the home page for Team <span id="team-name"><%= @team.name %></span>!
-<br>
-Basic Info:
-ID: <%= @team.id %>
-<br>
-Branch: <%= @team.branch %>
-<br>
-Goal: <div id="goal"><%= @team.goal %></div>
-<br>
-Miles to go:
-<div class="difference"></div>
-<br>
-<div id="mileage-count">
-	<h2>Total Team Mileage: </h2>
-	<div id="total">
-	</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12 col-xs-12 team-show">
+            This is the home page for Team <span id="team-name"><%= @team.name %></span>!
+            <br>
+            Basic Info:
+            ID: <%= @team.id %>
+            <br>
+            Branch: <%= @team.branch %>
+            <br>
+            Goal: <div id="goal"><%= @team.goal %></div>
+            <br>
+            Miles to go:
+            <div class="difference"></div>
+            <br>
+            <div id="mileage-count">
+            	<h2>Total Team Mileage: </h2>
+            	<div id="total">
+            	</div>
+            </div>
+            <br>
+            <ul id="teammate-info">
+              <% @team.users.each do |tm| %>   
+                <li><span class="teammate-name"><%= tm.first_name %></span> <span id="teammate-total"><%= tm.logs.sum(:mileage) %></span></li>
+              <% end %>
+            </ul>
+
+            <!-- HighCharts -->
+            <div id="team-chart-container" style="width:100%; height:400px;"></div>
+        </div>
+    </div>
 </div>
-<br>
-<ul id="teammate-info">
-  <% @team.users.each do |tm| %>   
-    <li><span class="teammate-name"><%= tm.first_name %></span> <span id="teammate-total"><%= tm.logs.sum(:mileage) %></span></li>
-  <% end %>
-</ul>
-
-<!-- HighCharts -->
-<div id="team-chart-container" style="width:100%; height:400px;"></div>
-
 <script>
 console.log("working!");
 
@@ -45,16 +50,21 @@ var allNames = [];
 var teammateTotal = $('#teammate-total').text();
 var teammateInfo = $('#teammate-info');
 for (var i=0; i<teammateName.length; i++){
-    allNames.push(teammateName[i]);
+ allNames.push(teammateName);
 }
-console.log(allNames);
 
 var miles = [];
 var names = [];
-var info;
-$('#teammate-info').each(function(index, value){
+var info = {};
+$('#teammate-info').children().each(function(index, value){
 	console.log(info = $(this).text());
 });
+
+for (var i=0; i<info.length; i++){
+    if (info[i].typeof == 'number') {
+        miles.push(info[i]);
+    }
+}
 // Highcharts
 $(function () {
     Highcharts.chart('team-chart-container', {
@@ -84,7 +94,7 @@ $(function () {
         },
         series: [{
             name: [teammateName],
-            data: [sum]
+            data: [miles]
         }]
     });
 });

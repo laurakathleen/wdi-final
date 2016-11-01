@@ -14,7 +14,7 @@
 </div>
 <div class="container-fluid">
   <div class="row">
-    <div class="col-md-12 col-xs-12" id="new-log-mileage">
+    <div class="col-md-4 offset-md-4 col-xs-12" id="new-log-mileage">
       <%= render :partial => 'logs/new', :object => @log %>
     </div>
   </div>
@@ -41,19 +41,24 @@ console.log(userTotal);
 $(function () {
     Highcharts.chart('user-daily-container', {
         chart: {
-            type: 'bar'
+            style: {
+                fontFamily: 'sans-serif',
+                color: "#fff"
+        },
+            type: "bar"
         },
         title: {
-            text: "Today's Mileage"
+            text: "Today's Mileage",
+            color: "#fff",
         },
         xAxis: {
             categories: null
         },
         yAxis: {
           min: 0,
-          max: userDaily + 2,
+          max: userDaily + 1,
             title: {
-                text: 'Miles'
+                text: "Miles"
             }
         },
         legend: {
@@ -65,6 +70,9 @@ $(function () {
                   enabled: true
                 }
             }
+        },
+        labels: {
+            x: null
         },
         series: [{
             name: [userFirstName],
@@ -80,7 +88,8 @@ $(function () {
             type: 'bar'
         },
         title: {
-            text: "<%= @user.first_name %>'s Total Mileage"
+            text: "<%= @user.first_name %>'s Total Mileage",
+            color: '#fff'
         },
         xAxis: {
             categories: null

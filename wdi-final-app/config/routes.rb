@@ -25,7 +25,7 @@ Rails.application.routes.draw do
   post '/users/:user_id', to: 'logs#create'
   get '/users/:user_id/logs/:log_id', to: 'logs#show', as: 'log'
   get '/users/:user_id/logs/:log_id/edit', to: 'logs#edit', as: 'edit_log'
-  patch '/users/:user_id/logs/:log_id/', to: 'logs#update'
+  patch '/users/:user_id/logs/:log_id', to: 'logs#update'
   delete '/users/:user_id/logs/:log_id', to: 'logs#destroy'
 
 end

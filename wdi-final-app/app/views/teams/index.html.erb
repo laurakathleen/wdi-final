@@ -1,12 +1,14 @@
-<%= link_to "Add a Team", new_teams_path %>
+<%= render "./users/tabs" %>
+<%= link_to "Create a New Team", new_teams_path, class: "btn new-team" %>
 <br>
-
+<div class="teams-list">
 <% @teams.each do |team| %>
-<% if current_user && current_user.branch == team.branch && current_user.start_location == team.start_location && current_user.end_location == team.end_location%>
-  <div>
-    <h3><%= team.name %></h3>
-      <%= button_to "Join", team_users_path(team) %>
+	<% if current_user && current_user.branch == team.branch && current_user.start_location == team.start_location && current_user.end_location == team.end_location%>
+		<div class="teams-list-item visible-md-inline">
+    	<li><%= team.name %>
+      	<%= button_to "Join", team_users_path(team) %></li>
     <% end %>
-  </div>
-  <br>
+    </div>
+  	<br>
 <% end %>
+</div>

@@ -4,6 +4,7 @@
 Mileage from <%= @log.date.strftime("%A %d %B, %Y") %>
 <br>
 Miles: <%= @log.mileage %>
+<br>
 <%= link_to "Edit", edit_log_path(@log) %>
-<%= button_to "Delete", @log, method: :delete %>
+<%= button_to "Delete", @log, method: :delete, class: "btn delete-btn" %>
 <div>

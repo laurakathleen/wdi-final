@@ -20,7 +20,7 @@
         <div class="navbar-header">
           <span><li class="navbar-brand main-nav"><%= link_to "Miles", root_path %></li></span>
         </div>
-        <div class="col-md-4 offset-md-4 col-xs-4 offset-xs-4" id="session-msg">
+        <div class="col-md-6 offset-md-3 col-xs-4 offset-xs-4" id="session-msg">
           <% flash.each do |name, msg| %>
             <p class=".navbar-text">
               <small><%= name.capitalize %>: <%= msg %></small>

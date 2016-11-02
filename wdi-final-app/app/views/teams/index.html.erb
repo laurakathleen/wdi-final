@@ -6,7 +6,7 @@
 	<% if current_user && current_user.branch == team.branch && current_user.start_location == team.start_location && current_user.end_location == team.end_location%>
 		<div class="teams-list-item visible-md-inline">
     	<li><%= team.name %>
-      	<%= button_to "Join", team_users_path(team) %></li>
+      	<%= button_to "Join", team_users_path(team), :class => "btn", :id => "join-btn" %></li>
     <% end %>
     </div>
   	<br>

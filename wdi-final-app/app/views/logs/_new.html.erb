@@ -10,7 +10,7 @@
     <div class="form-group">
       <%= f.hidden_field :user_id, value: session[:user_id] %>
     </div>
-    <span class="btn"><%= f.submit %></span>
+    <%= f.submit :class => "btn", :id => "new-log-btn" %>
   <% end %>
 </div>
 

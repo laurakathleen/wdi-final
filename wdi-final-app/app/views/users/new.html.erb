@@ -15,7 +15,7 @@
           <input type="password" class="form-control"<%= f.password_field :password, placeholder: "Password" %>
         </div>
         <div class="form-group">
-          Choose branch of military:
+          Branch of military:
           <select class="select-field" name="user[branch]" id="military-branch">
           <option value="Air Force">Air Force</option>
           <option value="Army">Army</option>
@@ -24,7 +24,7 @@
         </select>
         </div>
         <div class="form-group">
-          Choose your home base:
+          Your home base:
           <select class="select-field" name="user[start_location]" id="start-location-selector">
           <option value="Fort Bragg, NC">Fort Bragg, NC</option>
           <option value="Fort Campbell, KY">Fort Campbell, KY</option>
@@ -48,14 +48,14 @@
         </select>
         </div>
         <div class="form-group">
-        Choose the country of deployment:
+        Country of deployment:
           <select class="select-field" name="user[end_location]" id="user-end-location">
           <option value="Japan">Japan</option>
           <option value="Afghanistan">Afghanistan</option>
           <option value="Kuwait">Kuwait</option>
           </select>
         </div>
-        <%= f.submit 'Sign Up' %>
+        <%= f.submit "Sign Up", :class => "btn", :id => "new-user" %>
       <% end %>
     </div>
   </div>

@@ -28,6 +28,12 @@
 	text-decoration: none;
 }
 
+#session-msg p {
+	color: #fff;
+	font-size: 1em;
+	text-align: center;
+}
+
 #session-msg {
 	position: absolute;
 	color: #fff;

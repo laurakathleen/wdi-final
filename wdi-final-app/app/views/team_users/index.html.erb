@@ -4,10 +4,12 @@
 		<div>You are a member of the following teams: </div>
 		<ul>
 		  <% @teams.each do |team| %>   
-		    <li>#<%= team.id %>: <%= team.name %></li>
+		    <a href="teams/<%= team.id %>"><li>#<%= team.id %>: <%= team.name %></li></a>
 		  <% end %>
 		</ul>
 	</div>
 </div>
 
+<script>
+</script>
 

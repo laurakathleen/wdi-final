@@ -11,6 +11,10 @@
 	list-style: none;
 }
 
+#new-log-btn {
+  width: 50%;
+}
+
 .calendar-top {
 	margin-top: 1em;
 }
@@ -121,4 +125,5 @@ table td {
 .log-show-container {
 	background-color: #fff;
 	width: 25%;
+  font-family: 'Quicksand', sans-serif;
 }

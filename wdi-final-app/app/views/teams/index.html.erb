@@ -1,14 +1,19 @@
 <%= render "./users/tabs" %>
-<%= link_to "Create a New Team", new_teams_path, :class => "btn", :id => "new-team-btn" %>
-<br>
-<div class="teams-list">
-<% @teams.each do |team| %>
-	<% if current_user && current_user.branch == team.branch && current_user.start_location == team.start_location && current_user.end_location == team.end_location%>
-		<div class="teams-list-item visible-md-inline">
-    	<li><%= team.name %>
-      	<%= button_to "Join", team_users_path(team), :class => "btn", :id => "join-btn" %></li>
-    <% end %>
-    </div>
-  	<br>
-<% end %>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-4 col-md-offset-4 col-xs-12">
+		<%= link_to "Create a New Team", new_teams_path, :class => "btn", :id => "new-team-btn" %>
+		<br>
+		<div class="teams-list">
+		<% @teams.each do |team| %>
+			<% if current_user && current_user.branch == team.branch && current_user.start_location == team.start_location && current_user.end_location == team.end_location%>
+				<div class="teams-list-item visible-md-inline">
+		    	<li><%= team.name %>
+		      	<%= button_to "Join", team_users_path(team), :class => "btn", :id => "join-btn" %></li>
+		    <% end %>
+		    </div>
+		  	<br>
+		<% end %>
+		</div>
+	</div>
 </div>

@@ -11,6 +11,10 @@ p {
 	font-size: 1.75em;
 }
 
+#site-title li a {
+	color: #73B9B9;
+}
+
 #new-user {
 	color: #000;
 	width: 100%;
@@ -60,7 +64,8 @@ p {
 .navbar-right li a {
 	font-family: 'Quicksand', sans-serif;
 	font-size: 1.25em;
-	color: #73B9B9;	text-decoration: none;
+	color: #fff;
+	text-decoration: none;
 }
 
 .user-tabs {
@@ -72,6 +77,10 @@ p {
 
 .user-tabs li {
 	margin-top: -2.5em;
+}
+
+.user-tabs li a {
+	color: #008080;
 }
 
 .user-chart {

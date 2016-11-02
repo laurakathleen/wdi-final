@@ -130,6 +130,7 @@ table td {
   border-radius: 2%;
   text-align: center;
   font-family: 'Quicksand', sans-serif;
+  font-size: 1.2em;
 }
 
 .edit-delete-btns {
@@ -158,4 +159,9 @@ table td {
 #delete-btn {
   width: 5em;
   height: 2.5em;
+}
+
+#save-edit-btn {
+  border: 1px solid #000;
+  width: 40%;
 }

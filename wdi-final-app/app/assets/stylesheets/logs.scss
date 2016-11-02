@@ -21,7 +21,7 @@
 
 .calendar-container {
 	background-color: #fff;
-	height: auto;
+  overflow-y: auto;
 	font-family: 'Quicksand', sans-serif;
 	border-radius: 0.6%;
 }

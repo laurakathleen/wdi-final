@@ -17,7 +17,7 @@ class UsersController < ApplicationController
   	def show
   		@user = User.find_by_id(params[:id])
   		@log = Log.new
-  		@teams = @user.teams.all
+ 	 	@teams = @user.teams.all
   	end
 
 	private

@@ -20,6 +20,9 @@ class LogsController < ApplicationController
 	def show
 		@log = Log.find_by_id(params[:log_id])
 		@user = @log.user
+		def calendar_show 
+			@log = @user.log
+		end
 	end
 
 	def edit

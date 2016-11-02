@@ -124,6 +124,12 @@ table td {
 /******Logs Show******/
 .log-show-container {
 	background-color: #fff;
-	width: 25%;
+	width: 40%;
+  text-align: center;
   font-family: 'Quicksand', sans-serif;
+}
+
+.edit-delete-btns {
+  display: inline-block;
+  width: 50%;
 }

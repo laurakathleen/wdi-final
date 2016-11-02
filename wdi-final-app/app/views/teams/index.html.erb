@@ -1,5 +1,5 @@
 <%= render "./users/tabs" %>
-<%= link_to "Create a New Team", new_teams_path, class: "btn new-team" %>
+<%= link_to "Create a New Team", new_teams_path, :class => "btn", :id => "new-team-btn" %>
 <br>
 <div class="teams-list">
 <% @teams.each do |team| %>

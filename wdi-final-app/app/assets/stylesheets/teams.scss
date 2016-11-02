@@ -2,6 +2,9 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.new-team-form p {
+	
+}
 
 .team-show {
 	color: #fff;
@@ -34,5 +37,10 @@
 }
 
 #new-team {
+	color: #000;
+}
+
+#new-team-btn {
+	width: auto;
 	color: #000;
 }

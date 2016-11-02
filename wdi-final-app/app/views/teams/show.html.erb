@@ -49,14 +49,17 @@ for (var i=0; i<teammateName.length; i++){
 var miles = [];
 var names = [];
 var info = {};
-$('#teammate-info').children().each(function(index, value){
+$('#teammate-info').each(function(index, value){
     console.log(info = $(this).text());
 });
+console.log('names line 56', names);
+console.log('info: ', info);
 for (var i=0; i<info.length; i++){
     if (info[i].typeof == 'number') {
         miles.push(info[i]);
     }
 }
+console.log('names:', names);
 // Highcharts
 $(function () {
     Highcharts.chart('team-chart-container', {
@@ -84,10 +87,13 @@ $(function () {
                 stacking: 'normal'
             }
         },
-        series: [{
-            name: [teammateName],
-            data: [miles]
-        }]
+        series:[
+            <% @team.users.each do |tm|%>
+            {
+                name:'<%= tm.first_name%>',
+                data:[sum]
+            },
+            <% end %>]
     });
 });
 

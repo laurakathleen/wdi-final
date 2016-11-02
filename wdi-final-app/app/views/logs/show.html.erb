@@ -1,9 +1,9 @@
 <%= render "./users/tabs" %>
 
 <div class="log-show-container">
-Mileage from <%= @log.date %>
+Mileage from <%= @log.date.strftime("%A %d %B, %Y") %>
 <br>
 Miles: <%= @log.mileage %>
 <%= link_to "Edit", edit_log_path(@log) %>
 <%= button_to "Delete", @log, method: :delete %>
-</div>
+<div>

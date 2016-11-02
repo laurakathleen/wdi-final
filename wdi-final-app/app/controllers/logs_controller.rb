@@ -37,8 +37,9 @@ class LogsController < ApplicationController
 	def destroy
 		log_id = params[:log_id]
 		@log = Log.find_by_id(log_id)
+		@user = @log.user
 		@log.destroy
-		redirect_to user_logs_path(@user)
+		redirect_to @user
 	end
 
 	private

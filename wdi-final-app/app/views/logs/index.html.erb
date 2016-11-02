@@ -8,7 +8,7 @@
   			<hr id="calendar-hr">
   			<% logs.each do |log| %>
     			<div id="calendar-square-ind">
-      			<%= link_to log.mileage, @log %> miles
+      			<a href="logs/<%= log.id %>"><%= log.mileage %> miles</a>
     			</div>
   			<% end %>
 			<% end %>

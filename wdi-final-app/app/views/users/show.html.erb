@@ -6,6 +6,9 @@
       <p>Total today: <span id="user-daily"><%= @user.logs.where(date: Date.today).sum(:mileage) %></span> miles</p>
     </div>
   </div>
+
+  <%= render "./team_users/index" %>
+
   <!-- HighCharts -->
   <div class="row">
     <div class="col-md-6 col-xs-8 user-chart" id="user-daily-container"></div>

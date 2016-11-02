@@ -124,7 +124,10 @@ table td {
 /******Logs Show******/
 .log-show-container {
 	background-color: #fff;
-	width: 40%;
+  margin-top: 5%;
+  padding-top: 2%;
+  padding-bottom: 1%;
+  border-radius: 2%;
   text-align: center;
   font-family: 'Quicksand', sans-serif;
 }
@@ -132,4 +135,27 @@ table td {
 .edit-delete-btns {
   display: inline-block;
   width: 50%;
+}
+
+.edit-dlt-btn {
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 6%;
+  margin-top: 1.25em;
+  color: #008080;
+}
+
+#edit-btn {
+  width: 5em;
+  height: 2.5em;
+  text-decoration: none;
+}
+
+#edit-btn a {
+  color: #008080;
+}
+
+#delete-btn {
+  width: 5em;
+  height: 2.5em;
 }

@@ -9,9 +9,11 @@
 			<div class="miles-show">
 				Miles: <%= @log.mileage %>
 				<br>
-				<div class="edit-delete-btns">
-					<%= link_to "Edit", edit_log_path(@log) %>
-					<%= button_to "Delete", @log, method: :delete, class: "btn delete-btn" %>
+				<div class="row">
+					<div class="edit-delete-btns">
+						<span class="edit-dlt-btn" id="edit-btn"><%= link_to "Edit", edit_log_path(@log), class: "btn" %></span>
+						<span class="edit-dlt-btn" id="delete-btn"><%= button_to "Delete", @log, method: :delete, class: "btn delete-btn" %></span>
+					</div>
 				</div>
 			</div>
 		<div>

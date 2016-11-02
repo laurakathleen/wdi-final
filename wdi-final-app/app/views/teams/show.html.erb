@@ -28,18 +28,16 @@
 </div>
 <script>
 console.log("working!");
-
 var sum = 0;
 var difference;
 var goal;
 $('span').each(function() {
-	sum += +$(this).text()||0;
+    sum += +$(this).text()||0;
 });
 goal = $('#goal').text();
 difference = goal - sum;
 $('#total').text(sum);
 $('.difference').text(difference);
-
 var teamName = $('#team-name').text();
 var teammateName = $('.teammate-name').text();
 var allNames = [];
@@ -48,14 +46,12 @@ var teammateInfo = $('#teammate-info');
 for (var i=0; i<teammateName.length; i++){
  allNames.push(teammateName);
 }
-
 var miles = [];
 var names = [];
 var info = {};
 $('#teammate-info').children().each(function(index, value){
-	console.log(info = $(this).text());
+    console.log(info = $(this).text());
 });
-
 for (var i=0; i<info.length; i++){
     if (info[i].typeof == 'number') {
         miles.push(info[i]);
@@ -74,8 +70,8 @@ $(function () {
             categories: null
         },
         yAxis: {
-        	min: 0,
-        	max: goal,
+            min: 0,
+            max: goal,
             title: {
                 text: 'Miles'
             }

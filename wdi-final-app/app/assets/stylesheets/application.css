@@ -36,6 +36,8 @@
 
 #session-msg {
 	position: absolute;
+	margin-left: 33%;
+	margin-top: 1%;
 	color: #fff;
 	text-align: center;
 }

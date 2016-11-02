@@ -91,7 +91,7 @@ $(function () {
             <% @team.users.each do |tm|%>
             {
                 name:'<%= tm.first_name%>',
-                data:[sum]
+                data:[<%= tm.logs.sum(:mileage) %>]
             },
             <% end %>]
     });

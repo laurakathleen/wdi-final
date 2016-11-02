@@ -11,6 +11,7 @@ class TeamsController < ApplicationController
 
 	def create
 		@team = Team.create(team_params)
+		@user = @current_user
 		redirect_to teams_path
 	end
 
@@ -18,6 +19,7 @@ class TeamsController < ApplicationController
 		@user = User.find_by_id(params[:user_id])
 		@team = Team.find_by_id(params[:team_id])
 		@team_names = @team.users
+		@team_logs = @user.logs.sum(:mileage)
 	end
 
 	private

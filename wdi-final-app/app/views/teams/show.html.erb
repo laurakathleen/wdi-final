@@ -1,25 +1,36 @@
 <%= render "./users/tabs" %>
-<div class="container-fluid">
+  <div class="container-fluid">
     <div class="row">
-        <div class="col-md-12 col-xs-12 team-show">
-            <span id="team-name"><%= @team.name %></span>!
-            <br>
-            Goal: <span id="goal"><%= @team.goal %></span>
-            <br>
-            Miles to go:
-            <span class="difference"></span>
-            <br>
-            <div id="mileage-count">
-            	<h2>Total Team Mileage: </h2>
-            	<div id="total">
-            	</div>
-            </div>
-            <br>
+      <div class="col-md-12 col-xs-12 team-show">
+        <div class="row">
+          <div class="col-md-4 col-xs-12">
+            <span id="team-name"><%= @team.name %></span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-md-offset-8 col-xs-12 teammate-list">
             <ul id="teammate-info">
+              <h3>Teammates</h3>
               <% @team.users.each do |tm| %>   
                 <li><span class="teammate-name"><%= tm.first_name %></span> <span id="teammate-total"><%= tm.logs.sum(:mileage) %></span></li>
               <% end %>
             </ul>
+          </div>
+        </div>
+        <div clas="row">
+          <div class="col-md-4 col-md-offset-4 col-xs-12">
+            <h2>Total Team Mileage: </h2>
+            <div id="total"></div>
+            Goal: <span id="goal"><%= @team.goal %></span>
+            <br>
+            Miles to go:
+            <span class="difference"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+            
 
             <!-- HighCharts -->
             <div id="team-chart-container" style="width:100%; height:400px;"></div>
@@ -27,7 +38,6 @@
     </div>
 </div>
 <script>
-console.log("working!");
 var sum = 0;
 var difference;
 var goal;
@@ -38,28 +48,7 @@ goal = $('#goal').text();
 difference = goal - sum;
 $('#total').text(sum);
 $('.difference').text(difference);
-var teamName = $('#team-name').text();
-var teammateName = $('.teammate-name').text();
-var allNames = [];
-var teammateTotal = $('#teammate-total').text();
-var teammateInfo = $('#teammate-info');
-for (var i=0; i<teammateName.length; i++){
- allNames.push(teammateName);
-}
-var miles = [];
-var names = [];
-var info = {};
-$('#teammate-info').each(function(index, value){
-    console.log(info = $(this).text());
-});
-console.log('names line 56', names);
-console.log('info: ', info);
-for (var i=0; i<info.length; i++){
-    if (info[i].typeof == 'number') {
-        miles.push(info[i]);
-    }
-}
-console.log('names:', names);
+
 // Highcharts
 $(function () {
     Highcharts.chart('team-chart-container', {

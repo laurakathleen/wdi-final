@@ -1,14 +1,10 @@
-<div class="container-fluid">
-	<div class="row">
-		<div class="users-teams col-md-12 col-xs-12">
-			<ul id="your-team-list">
-				<h3 id="user-teams-heading">Your teams:</h3>
-			  <% @teams.each do |team| %>   
-			    <a href="<%= current_user.id %>/teams/<%= team.id %>"><li><%= team.name %></li></a>
-			  <% end %>
-			</ul>
-		</div>
-	</div>
-</div>
+<ul id="your-team-list">
+  <% @teams.each do |team| %>   
+    <a href="<%= current_user.id %>/teams/<%= team.id %>">
+    	<li><%= team.name %></li>
+    </a>
+  <% end %>
+</ul>
+
 
 

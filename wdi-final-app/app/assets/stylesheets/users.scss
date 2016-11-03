@@ -27,6 +27,10 @@ p {
 	color: #73B9B9;
 }
 
+#users-teams {
+	color: #000;
+}
+
 #fade-out-img {
  	margin-top: -1.2em;
 	position: absolute;
@@ -92,33 +96,36 @@ p {
 	font-weight: bolder;
 }
 
-#new-log-form {
-	margin-top: 2em;
-	padding-top: 0.75em;
-	padding-bottom: 0.75em;
-	text-align: center;
-}
 
-#new-log-form-mileage {
-	margin: 0 auto;
-	width: 50%;
-}
-
-.form {
-	color: #fff;
-	font-family: 'Quicksand', sans-serif;
-}
-
-.select-field {
-	color: #000;
-}
 /******High Charts******/
+
+.chart-container {
+	width: 100%;
+	background-color: #fff;
+	border-radius: 6px;
+	height: 15em;
+	margin-top: 1em;
+}
+
+#user-daily-container {
+	width: 90%;
+	margin: 1em auto;
+}
+
+#user-total-container {
+	width: 90%;
+	margin: 1em auto;
+}
+
+#user-totals {
+}
+
 .highcharts-background {
-	fill: #2A2E30;
+	fill: #fff;
 }
 
 tspan {
-	fill: #fff;
+	fill: #000;
 	font-family: 'Quicksand', sans-serif;
 }
 

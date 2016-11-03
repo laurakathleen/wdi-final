@@ -9,28 +9,17 @@
 	color: #008080;
 }
 
-#user-teams-heading {
-	color: #fff;
-}
-
 .users-teams {
-	color: #fff;
-	font-family: 'Quicksand', sans-serif;
-	font-size: 1.3em;
-	text-align: center;
-	width: 60%;
-	margin-left: 18%;
+	 padding-top: 0.75em;
 }
 
 .users-teams ul li {
-	list-style: none;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 1.3em;
 	color: #000;
-	text-align: center;
-	border: 1px solid #fff;
-	border-radius: 4px;
-	width: 30%;
-	height: 2em;
-	padding-top: 0.25em;
-	margin-left: 35%;
-	background-color: #fff;
+}
+
+#your-team-list {
+	list-style: none;
+	font-family: 'Quicksand', sans-serif;
 }

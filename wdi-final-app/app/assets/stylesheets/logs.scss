@@ -11,29 +11,32 @@
 	list-style: none;
 }
 
-#new-log-btn {
+/****** New Log Form ******/
+#new-log-form {
+  padding-bottom: 0.75em;
+  text-align: center;
+}
+
+#new-log-form-mileage {
+  margin: 0 auto;
   width: 50%;
 }
 
-.calendar-top {
-	margin-top: 1em;
+.form {
+  color: #fff;
+  font-family: 'Quicksand', sans-serif;
 }
 
-.calendar-container {
-	background-color: #fff;
-  overflow-y: auto;
-	font-family: 'Quicksand', sans-serif;
-	border-radius: 0.6%;
+.select-field {
+  color: #000;
+} 
+
+#new-log-btn {
+  width: 50%;
+  border: 1px solid black;
 }
 
-.calendar-title {
-	padding-left: 11em;
-	padding-right: 11em;
-	font-size: 2em;
-	font-family: 'Quicksand', sans-serif;
-
-}
-
+/****** User Show ******/
 #user-history {
 	background-color: #fff;
 	text-align: center;
@@ -44,6 +47,26 @@
 	padding-top: 1em;
 }
 
+/****** Calendar ******/
+
+.calendar-top {
+  margin-top: 1em;
+}
+
+.calendar-container {
+  background-color: #fff;
+  overflow-y: auto;
+  font-family: 'Quicksand', sans-serif;
+  border-radius: 0.6%;
+}
+
+.calendar-title {
+  padding-left: 11em;
+  padding-right: 11em;
+  font-size: 2em;
+  font-family: 'Quicksand', sans-serif;
+
+}
 .calendar-square {
 	text-align: center;
 	height: 30em;

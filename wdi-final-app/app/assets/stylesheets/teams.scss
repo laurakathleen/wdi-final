@@ -2,9 +2,6 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.new-team-form p {
-	
-}
 
 .team-show {
 	color: #fff;
@@ -13,6 +10,12 @@
 
 .team-show ul li {
 	list-style: none;
+}
+
+#team-chart-wrapper {
+	width: 90%;
+	margin: -1.75em auto;
+	height: 15em;
 }
 
 .teams-list-item {
@@ -52,6 +55,10 @@
 
 .teammate-list {
 	margin-left: 70%;
+}
+
+.highcharts-legend-item text {
+	color: #fff;
 }
 
 /******Teams show******/

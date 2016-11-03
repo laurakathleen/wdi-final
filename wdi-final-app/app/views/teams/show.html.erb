@@ -1,42 +1,42 @@
 <%= render "./users/tabs" %>
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-md-12 col-xs-12 team-show">
-        <div class="row">
-          <div class="col-md-4 col-xs-12">
-            <span id="team-name"><%= @team.name %></span>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4 col-md-offset-8 col-xs-12 teammate-list">
-            <ul id="teammate-info">
-              <h3>Teammates</h3>
-              <% @team.users.each do |tm| %>   
-                <li><span class="teammate-name"><%= tm.first_name %></span> <span id="teammate-total"><%= tm.logs.sum(:mileage) %></span></li>
-              <% end %>
-            </ul>
-          </div>
-        </div>
-        <div clas="row">
-          <div class="col-md-4 col-md-offset-4 col-xs-12">
-            <h2>Total Team Mileage: </h2>
-            <div id="total"></div>
-            Goal: <span id="goal"><%= @team.goal %></span>
-            <br>
-            Miles to go:
-            <span class="difference"></span>
-          </div>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-6 col-md-4 card team-info-container">
+      <span id="team-name"><%= @team.name %></span>
+    </div>
+    <div class="col-xs-12 col-md-8 card">
+      <div class="chart-container">
+        <div id="team-chart-wrapper"></div>
         </div>
       </div>
     </div>
   </div>
-            
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-6 col-md-4 card">
+      <ul id="teammate-info">
+        <h3>Teammates</h3>
+        <% @team.users.each do |tm| %>   
+          <li><span class="teammate-name"><%= tm.first_name %></span> <span id="teammate-total"><%= tm.logs.sum(:mileage) %></span></li>
+        <% end %>
+      </ul>
+    </div>
+    <div class="col-xs-6 col-md-4 card">
+      <h2>Total Team Mileage: </h2>
+        <div id="total">
+        </div>
+        Goal: <span id="goal"><%= @team.goal %></span>
+        <br>
+        Miles to go:
+        <span class="difference"></span></div>
+    <div class="col-xs-6 col-md-4 card">.col-xs-6 .col-md-4</div>
+  </div>
+</div>  
 
             <!-- HighCharts -->
-            <div id="team-chart-container" style="width:100%; height:400px;"></div>
-        </div>
-    </div>
-</div>
+ <div id="container" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div>
+
 <script>
 var sum = 0;
 var difference;
@@ -51,7 +51,7 @@ $('.difference').text(difference);
 
 // Highcharts
 $(function () {
-    Highcharts.chart('team-chart-container', {
+    Highcharts.chart('team-chart-wrapper', {
         chart: {
             type: 'bar'
         },
@@ -62,14 +62,16 @@ $(function () {
             categories: null
         },
         yAxis: {
-            min: 0,
+            min: null,
             max: goal,
             title: {
                 text: 'Miles'
             }
         },
         legend: {
-            reversed: false
+            reversed: false,
+            align: 'center',
+            floating: false 
         },
         plotOptions: {
             series: {
@@ -83,6 +85,50 @@ $(function () {
                 data:[<%= tm.logs.sum(:mileage) %>]
             },
             <% end %>]
+    });
+});
+
+
+$(function () {
+
+    $(document).ready(function () {
+
+        // Build the chart
+        Highcharts.chart('container', {
+            chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: true,
+                type: 'pie'
+            },
+            title: {
+                text: 'Miles to Goal'
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false
+                    },
+                    showInLegend: true
+                }
+            },
+            series: [{
+                name: 'Remaining Miles',
+                colorByPoint: true,
+                data: [{
+                    name: 'Miles Down',
+                    y: ''
+                }, {
+                    name: ['Miles To Go'],
+                    y: 0.2
+                }]
+            }]
+        });
     });
 });
 

@@ -14,10 +14,10 @@
         <div class="form-group">
           <input type="text" class="form-control"<%= f.text_field :name, placeholder: "Team Name" %>
         </div>
-                <div class="form-group">
+        <div class="form-group">
           Your home base:
-          <select class="select-field" name="user[start_location]" id="start-location-selector">
-          <option hidden-value ="{35.1415, 79.0080}" value="Fort Bragg, NC">Fort Bragg, NC</option>
+          <select class="select-field" name="team[start_location]" id="start-location-selector">
+          <option value="Fort Bragg, NC">Fort Bragg, NC</option>
           <option value="Fort Campbell, KY">Fort Campbell, KY</option>
           <option value="Fort Hood, TX">Fort Hood, TX</option>
           <option value="Joint Base Lewis-McChord, WA">Joint Base Lewis-McChord, WA</option>
@@ -39,9 +39,9 @@
         </select>
         </div>
         <div class="form-group">
-          Deployment Location
-          <select class="select-field" name="user[end_location]" id="end-location-selector">
-          <option hidden-value="{36.2048, 138.2529}" value="Japan">Japan</option>
+        Country of deployment:
+          <select class="select-field" name="team[end_location]" id="team-end-location">
+          <option value="Japan">Japan</option>
           <option value="Afghanistan">Afghanistan</option>
           <option value="Kuwait">Kuwait</option>
           <option value="U.A.E.">U.A.E.</option>

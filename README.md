@@ -15,9 +15,9 @@ By setting goals and keeping teammates accountable for contributing miles, this 
 * jQuery
 * Bootstrap
 
-![Alt text](app/assets/images/team-show.png)
+![Alt text](./app/assets/images/team-show.png)
 
-![Alt text](app/assets/images/history-log.png)
+![Alt text](./app/assets/images/history-log.png)
 
 ###Planning:
 
@@ -25,8 +25,8 @@ By setting goals and keeping teammates accountable for contributing miles, this 
 
 ####Mockups:
 
-![Alt text](app/assets/images/mockup-user-show.png)
+![Alt text](./app/assets/images/mockup-user-show.png)
 
+![Alt text](./app/assets/images/mockup-team-show.png)
 
-![Alt text](app/assets/images/mockup-history-log.png)
-
+![Alt text](./app/assets/images/mockup-history-log.png)

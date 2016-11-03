@@ -46,7 +46,6 @@
 </div>  
 
 <script>
-console.log("working!");
 var sum = 0;
 var difference;
 var goal;
@@ -97,4 +96,51 @@ $(function () {
         <% end %>]
     });
 });
+
+$(function () {
+
+    $(document).ready(function () {
+
+        // Build the chart
+
+        Highcharts.chart('miles-to-goal-container', {
+            chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: true,
+                type: 'pie'
+            },
+            title: {
+                text: 'Miles to Goal'
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.y}</b><br>',
+                valueSuffix: ' miles',
+                shared: true
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false
+                    },
+                    showInLegend: true
+                }
+            },
+            series: [{
+                name: 'Remaining Miles',
+                colorByPoint: true,
+                data: [{
+                    name: 'Miles Down',
+                    y: sum
+                }, {
+                    name: ['Miles To Go'],
+                    y: difference 
+                }]
+            }]
+        });
+    });
+});
+
 </script>

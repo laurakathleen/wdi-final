@@ -1,24 +1,27 @@
-# README
+# A Few Short Miles
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+###Motivation & Users
+A few short miles is a an app created for family and friends of a deployed loved one in the military. Users sign up, join a team made up of users on their home base who are currently starting the same deployment, and collectively keep track of how many miles they run, bike, swim, or walk each day. Each team’s goal is to reach the number of miles between their home base and the location of their loved one’s deployment.
 
-Things you may want to cover:
+By setting goals and keeping teammates accountable for contributing miles, this app helps users keep busy, keep connected with their community, benefits in their physical fitness, and helps keep their mental health stable, all of which are vital when working your way through a deployment.
 
-* Ruby version
+###Technologies Used
+* PostgreSQL
+* Ruby on Rails
+* Simple Calendar Gem
+* HighCharts Gem
+* Bcrypt Gem
+* Javascript
+* jQuery
+* Bootstrap
 
-* System dependencies
+![Alt text](./app/assets/images/team-show.png)
 
-* Configuration
+![Alt text](./app/assets/images/history-log.png)
 
-* Database creation
+##Mockups/Planning with UI
+![Alt text](./app/assets/images/mockup-user-show.png)
 
-* Database initialization
+![Alt text](./app/assets/images/mockup-team-show.png)
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+![Alt text](./app/assets/images/mockup-history-log.png)

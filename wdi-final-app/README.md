@@ -19,7 +19,12 @@ By setting goals and keeping teammates accountable for contributing miles, this 
 
 ![Alt text](./app/assets/images/history-log.png)
 
-##Mockups/Planning with UI
+###Planning:
+
+####User Stories: [Trello] (https://trello.com/b/hAzn52LM/final-project) 
+
+####Mockups:
+
 ![Alt text](./app/assets/images/mockup-user-show.png)
 
 ![Alt text](./app/assets/images/mockup-team-show.png)

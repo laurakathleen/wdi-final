@@ -15,7 +15,7 @@ By setting goals and keeping teammates accountable for contributing miles, this 
 * jQuery
 * Bootstrap
 
-![Alt text](../app/assets/images/team-show.png)
+![Alt text](/app/assets/images/team-show.png)
 
 ![Alt text](./app/assets/images/history-log.png)
 

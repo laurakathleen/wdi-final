@@ -2,6 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+/******Teams show******/
 
 .team-show {
 	color: #fff;
@@ -28,6 +29,34 @@
 
 #teammate-info h3 {
 	font-size: 1.5em;
+}
+
+#mileage-count {
+	font-family: 'Quicksand', sans-serif;
+}
+
+#mileage-count h3 {
+	font-size: 1.5em;
+	text-align: center;
+}
+
+#total {
+	font-size: 1.5em;
+	color: #008080;
+}
+
+.difference {
+	font-size: 1.5em;
+	margin-left: 5.5em;
+	color: #008080;
+}
+
+#hide-goal {
+	display: none;
+}
+
+#total {
+	text-align: center;
 }
 
 #team-name {
@@ -82,9 +111,4 @@
 
 .highcharts-legend-item text {
 	color: #fff;
-}
-
-/******Teams show******/
-#mileage-count {
-	margin-left: 30%;
 }

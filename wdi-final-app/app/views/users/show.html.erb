@@ -3,26 +3,26 @@
   <div class="row">
       <div class="col-md-8">
         <div class="chart-container">
-          <div class="user-chart card" id="user-daily-container">
+          <div class="user-chart user-card" id="user-daily-container">
           </div>
         </div>
       </div>
-      <div class="col-md-4 card" id="new-log-mileage">
+      <div class="col-md-4 user-card" id="new-log-mileage">
       <%= render :partial => 'logs/new', :object => @log %>
       </div>
     </div>
     <div class="row">
       <div class="col-md-4">
         <div class="chart-container">
-          <div class="user-chart card" id="user-total-container">
+          <div class="user-chart user-card" id="user-total-container">
           </div>
         </div>
       </div>
-      <div class="col-md-4 card" id="users-teams">
+      <div class="col-md-4 user-card" id="users-teams">
         <p>My teams</p>
         <%= render "./team_users/index" %>
       </div>
-      <div class="col-md-4 card" id="user-totals">
+      <div class="col-md-4 user-card" id="user-totals">
         <p><%= @user.first_name %>'s total mileage: <span class="bold" id="user-total"><%= @user.logs.sum(:mileage) %></span><span class="bold"> miles</p>
         <p>Total today: <span class="bold" id="user-daily"><%= @user.logs.where(date: Date.today).sum(:mileage) %></span><span class="bold"> miles</p>
       </div>

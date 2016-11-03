@@ -16,7 +16,7 @@
  */
 
 
-.card {
+.user-card {
 	background-color: #fff;
 	margin-top: 1em;
 	height: 15em;
@@ -24,6 +24,16 @@
 	color: #000;
 	padding-top: 0.75em;
 }
+
+.team-card {
+	background-color: #fff;
+	margin-top: 1em;
+	height: 20em;
+	border-radius: 6px;
+	color: #000;
+	padding-top: 0.75em;
+}
+
 .main-nav {
 	list-style: none;
 	font-family: 'Quicksand', sans-serif;

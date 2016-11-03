@@ -21,7 +21,7 @@ By setting goals and keeping teammates accountable for contributing miles, this 
 
 ###Planning:
 
-####User Stories: [Trello] (https://trello.com/b/hAzn52LM/final-project) 
+####User Stories: [Trello](https://trello.com/b/hAzn52LM/final-project) 
 
 ####Mockups:
 

@@ -15,6 +15,10 @@
  *= require_self
  */
 
+.about-content {
+	width: 100%;
+}
+
 .heading {
 	margin-top: -40em;
 	text-align: center;
@@ -31,9 +35,6 @@
 	font-family: 'Quicksand', sans-serif;
 	font-size: 2.4em;
 }
- .hidden {
- 	visibility: hidden;
- }
 
 .splash-row {
 	padding-top: 2em;

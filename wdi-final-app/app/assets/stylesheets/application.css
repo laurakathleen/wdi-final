@@ -15,6 +15,9 @@
  *= require_self
  */
 
+ #sign-up {
+ 	color: #000;
+ }
 
 .user-card {
 	background-color: #fff;
@@ -25,6 +28,16 @@
 	padding-top: 0.75em;
 }
 
+.user-card-fidgety {
+	background-color: #fff;
+	margin-top: 1em;
+	height: 15em;
+	border-radius: 6px;
+	color: #000;
+	padding-top: 0.75em;
+	width: 32%;
+}
+
 .team-card {
 	background-color: #fff;
 	margin-top: 1em;
@@ -32,6 +45,10 @@
 	border-radius: 6px;
 	color: #000;
 	padding-top: 0.75em;
+}
+
+.third {
+	width: 32%;
 }
 
 .main-nav {

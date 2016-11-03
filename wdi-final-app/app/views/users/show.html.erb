@@ -18,22 +18,19 @@
           </div>
         </div>
       </div>
-      <div class="col-md-4 user-card" id="users-teams">
-        <p>My teams</p>
-        <%= render "./team_users/index" %>
+      <div class="col-md-4 user-card-fidgety" id="users-teams">
+        <div class="my-teams-container">
+          <p>My teams</p>
+          <%= render "./team_users/index" %>
+        </div>
       </div>
       <div class="col-md-4 user-card" id="user-totals">
         <p><%= @user.first_name %>'s total mileage: <span class="bold" id="user-total"><%= @user.logs.sum(:mileage) %></span><span class="bold"> miles</p>
         <p>Total today: <span class="bold" id="user-daily"><%= @user.logs.where(date: Date.today).sum(:mileage) %></span><span class="bold"> miles</p>
       </div>
     </div>
-
-
-
-    <div class="col-md-12 col-xs-12 user-page" id="list-user-info">
-      
-    </div>
   </div>
+</div>
 
 
 <script>
@@ -51,7 +48,7 @@ $('#user-total').each(function() {
 	userTotal += +$(this).text()||0;
 });
 console.log(userTotal);
-
+var createdAt = 
 // Highcharts
 
 $(function () {

@@ -96,6 +96,11 @@ p {
 	font-weight: bolder;
 }
 
+.my-teams-container {
+	width: 90%;
+	text-align: center;
+	margin: 0 auto;
+}
 
 /******High Charts******/
 
@@ -118,6 +123,13 @@ p {
 }
 
 #user-totals {
+	margin-right: 0;
+	margin-left: 1em;
+	width: 32%;
+}
+
+#user-totals p {
+	font-size: 1.3em;
 }
 
 .highcharts-background {

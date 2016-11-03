@@ -12,6 +12,29 @@
 	list-style: none;
 }
 
+.team-info-container p {
+	font-size: 1.3em;
+	text-align: center;
+	color: #000;
+}
+
+#teammate-info {
+	list-style: none;
+	text-align: center;
+	color: #000;
+	font-size: 1.3em;
+	font-family: 'Quicksand', sans-serif;
+} 
+
+#teammate-info h3 {
+	font-size: 1.5em;
+}
+
+#team-name {
+	font-size: 1.7em;
+	color: #008080;
+}
+
 #team-chart-wrapper {
 	width: 90%;
 	margin: -1.75em auto;

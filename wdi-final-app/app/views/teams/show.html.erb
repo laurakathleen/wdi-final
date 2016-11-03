@@ -2,7 +2,12 @@
 <div class="container">
   <div class="row">
     <div class="col-xs-6 col-md-4 card team-info-container">
-      <span id="team-name"><%= @team.name %></span>
+      <p id="team-name"><%= @team.name %></p>
+      <p><span><%= @team.branch %></span></p>
+      <p><%= @team.start_location %></p>
+      <p><%= @team.end_location %></p>
+      <p>Team Goal: <span><%= @team.goal %> miles</span></p>
+      <p>Timeframe: <span><%= @team.months %> months</span></p>
     </div>
     <div class="col-xs-12 col-md-8 card">
       <div class="chart-container">
@@ -18,7 +23,7 @@
       <ul id="teammate-info">
         <h3>Teammates</h3>
         <% @team.users.each do |tm| %>   
-          <li><span class="teammate-name"><%= tm.first_name %></span> <span id="teammate-total"><%= tm.logs.sum(:mileage) %></span></li>
+          <li><span class="teammate-name"><%= tm.first_name %>: </span> <span id="teammate-total"><%= tm.logs.sum(:mileage) %> miles</span></li>
         <% end %>
       </ul>
     </div>

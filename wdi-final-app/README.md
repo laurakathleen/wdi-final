@@ -25,7 +25,7 @@ By setting goals and keeping teammates accountable for contributing miles, this 
 
 ####Mockups:
 
-![Alt text](./app/assets/images/mockup-user-show.png)
+![Alt text](app/assets/images/mockup-user-show.png)
 
 ![Alt text](./app/assets/images/mockup-team-show.png)
 

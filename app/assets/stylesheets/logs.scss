@@ -1,0 +1,192 @@
+// Place all the styles related to the logs controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+#log {
+	text-align: center;
+	margin: 0 auto;
+	border: 1px solid black;
+	width: 50%;
+	list-style: none;
+}
+
+/****** New Log Form ******/
+#new-log-form {
+  padding-bottom: 0.75em;
+  text-align: center;
+}
+
+#new-log-form-mileage {
+  margin: 0 auto;
+  width: 50%;
+}
+
+.form {
+  margin-top: 5em;
+  color: #fff;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.select-field {
+  color: #000;
+} 
+
+#new-log-btn {
+  width: 50%;
+  border: 1px solid black;
+}
+
+/****** User Show ******/
+#user-history {
+	background-color: #fff;
+	text-align: center;
+}
+
+#user-history li {
+	list-style: none;
+	padding-top: 1em;
+}
+
+/****** Calendar ******/
+
+.calendar-top {
+  margin-top: 1em;
+}
+
+.calendar-container {
+  background-color: #fff;
+  overflow-y: auto;
+  font-family: 'Quicksand', sans-serif;
+  border-radius: 0.6%;
+}
+
+.calendar-title {
+  padding-left: 11em;
+  padding-right: 11em;
+  font-size: 2em;
+  font-family: 'Quicksand', sans-serif;
+
+}
+.calendar-square {
+	text-align: center;
+	height: 30em;
+}
+
+table td {
+	border: 1px solid black;
+	height: 4.5em;
+	width: 3em;
+}
+
+#calendar-hr {
+	margin-top: -0.15em;
+}
+
+.today {
+    background: #73B9B9;
+    color: #000;
+    text-decoration: #fff;
+  }
+
+  .next-month {
+    background: #B9DCDC;
+  }
+
+  .prev-month {
+  	background: #B9DCDC;
+  }
+
+.simple-calendar {
+  table {
+    -webkit-border-horizontal-spacing: 0px;
+    -webkit-border-vertical-spacing: 0px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid rgb(221, 221, 221);
+    border-collapse: collapse;
+    box-sizing: border-box;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  tr {
+    border-collapse: collapse;
+  }
+
+  th {
+    padding: 6px;
+    border-bottom: 2px solid rgb(221, 221, 221);
+    border-collapse: collapse;
+    border-left: 1px solid rgb(221, 221, 221);
+    border-right: 1px solid rgb(221, 221, 221);
+    border-top: 0px none rgb(51, 51, 51);
+    box-sizing: border-box;
+    text-align: left;
+  }
+
+  td {
+    padding: 6px;
+    vertical-align: top;
+    width: 14%;
+
+    border: 1px solid #ddd;
+    border-top-color: rgb(221, 221, 221);
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-right-color: rgb(221, 221, 221);
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-bottom-color: rgb(221, 221, 221);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-left-color: rgb(221, 221, 221);
+    border-left-style: solid;
+    border-left-width: 1px;
+  }
+ }
+
+/******Logs Show******/
+.log-show-container {
+	background-color: #fff;
+  margin-top: 5%;
+  padding-top: 2%;
+  padding-bottom: 1%;
+  border-radius: 2%;
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.2em;
+}
+
+.edit-delete-btns {
+  display: inline-block;
+  width: 50%;
+}
+
+.edit-dlt-btn {
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 6%;
+  margin-top: 1.25em;
+  color: #008080;
+}
+
+#edit-btn {
+  width: 5em;
+  height: 2.5em;
+  text-decoration: none;
+}
+
+#edit-btn a {
+  color: #008080;
+}
+
+#delete-btn {
+  width: 5em;
+  height: 2.5em;
+}
+
+#save-edit-btn {
+  border: 1px solid #000;
+  width: 40%;
+  color: #008080;
+}

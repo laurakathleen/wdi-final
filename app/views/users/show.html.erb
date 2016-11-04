@@ -1,0 +1,136 @@
+<%= render "tabs" %>
+<div class="container">
+  <div class="row">
+      <div class="col-md-8">
+        <div class="chart-container">
+          <div class="user-chart user-card" id="user-daily-container">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 user-card" id="new-log-mileage">
+      <%= render :partial => 'logs/new', :object => @log %>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="chart-container">
+          <div class="user-chart user-card" id="user-total-container">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 user-card-fidgety" id="users-teams">
+        <div class="my-teams-container">
+          <p>My teams</p>
+          <%= render "./team_users/index" %>
+        </div>
+      </div>
+      <div class="col-md-4 user-card" id="user-totals">
+        <p><%= @user.first_name %>'s total mileage: <span class="bold" id="user-total"><%= @user.logs.sum(:mileage) %></span><span class="bold"> miles</p>
+        <p>Total today: <span class="bold" id="user-daily"><%= @user.logs.where(date: Date.today).sum(:mileage) %></span><span class="bold"> miles</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+
+var userFirstName = $('#user-first-name').text();
+
+var userDaily = 0;
+var userTotal = 0;
+$('#user-daily').each(function() {
+  userDaily += +$(this).text()||0;
+});
+console.log(userTotal);
+
+$('#user-total').each(function() {
+	userTotal += +$(this).text()||0;
+});
+console.log(userTotal);
+var createdAt = 
+// Highcharts
+
+$(function () {
+
+    Highcharts.chart('user-daily-container', {
+        chart: {
+            style: {
+                fontFamily: 'sans-serif',
+                color: "#fff"
+        },
+            type: "bar"
+        },
+        title: {
+            text: "Today's Mileage: <%= @user.logs.where(date: Date.today).sum(:mileage) %> miles",
+            color: "#fff",
+        },
+        xAxis: {
+            categories: null,
+            tickInterval: null
+        },
+        yAxis: {
+          min: 0,
+          max: userDaily + 1,
+          tickInterval: null,
+            title: {
+                text: "Miles"
+            }
+        },
+        legend: {
+            reversed: false
+        },
+        plotOptions: {
+            bar: {
+                dataLabels: {
+                  enabled: true
+                },
+            }
+        },
+        labels: {
+            x: null
+        },
+        series: [{
+            name: [userFirstName],
+            data: [userDaily]
+        }]
+    });
+});
+
+
+$(function () {
+    Highcharts.chart('user-total-container', {
+        chart: {
+            type: 'bar'
+        },
+        title: {
+            text: "Total Mileage: <%= @user.logs.sum(:mileage) %> miles",
+            color: '#fff'
+        },
+        xAxis: {
+            categories: null
+        },
+        yAxis: {
+        	min: 0,
+        	max: userTotal + 5,
+            title: {
+                text: 'Miles'
+            }
+        },
+        legend: {
+            reversed: false
+        },
+        plotOptions: {
+            bar: {
+                dataLabels: {
+                	enabled: true
+                }
+            }
+        },
+        series: [{
+            name: [userFirstName],
+            data: [userTotal]
+        }]
+    });
+});
+
+</script>

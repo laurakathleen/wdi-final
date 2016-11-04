@@ -1,0 +1,18 @@
+<%= render "./users/tabs" %>
+
+<div class="container">
+	<div class="row calendar-top">
+		<div class="col-md-12 col-xs-12 calendar-container calendar-square col-md-12 col-xs-12">
+			<%= month_calendar events: @logs do |created_at, logs| %>
+  			<span id="right"><%= created_at.strftime("%d") %></span>
+  			<hr id="calendar-hr">
+  			<% logs.each do |log| %>
+    			<div id="calendar-square-ind">
+      			<a href="logs/<%= log.id %>"><%= log.mileage %> miles</a>
+    			</div>
+  			<% end %>
+			<% end %>
+		</div>
+	</div>
+</div>
+

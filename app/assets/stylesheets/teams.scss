@@ -1,0 +1,146 @@
+// Place all the styles related to the teams controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+/******Teams show******/
+
+.team-show {
+	color: #fff;
+	font-family: 'Quicksand', sans-serif;
+}
+
+.team-show ul li {
+	list-style: none;
+}
+
+#total-of-team {
+	width: 66%;
+	margin-left: 1em;
+
+}
+
+#teammate-div {
+	margin-right: 1em;
+}
+
+#countdown {
+	margin-left: 1em;
+	width: 33%;
+}
+
+.team-info-container p {
+	font-size: 1.3em;
+	text-align: center;
+	color: #000;
+}
+
+#teammate-info {
+	list-style: none;
+	text-align: center;
+	color: #000;
+	font-size: 1.3em;
+	font-family: 'Quicksand', sans-serif;
+} 
+
+#teammate-info h3 {
+	font-size: 1.5em;
+}
+
+#mileage-count {
+	font-family: 'Quicksand', sans-serif;
+}
+
+#mileage-count h3 {
+	font-size: 1.5em;
+	text-align: center;
+}
+
+#total {
+	font-size: 2em;
+	color: #008080;
+}
+
+.difference {
+	font-size: 2em;
+	margin-left: 5em;
+	color: #008080;
+}
+
+#hide-goal {
+	display: none;
+}
+
+#total {
+	text-align: center;
+}
+
+#team-name {
+	font-size: 1.7em;
+	color: #008080;
+}
+
+#team-chart-wrapper {
+	width: 90%;
+	margin: -1.75em auto;
+	height: 15em;
+}
+
+#miles-to-goal-container {
+	width: 90%;
+	height: 19em;
+	margin: -1.75em auto;
+}
+
+.teams-list-item {
+	color: #fff;
+	width: 100%;
+	text-align: center;
+	font-family: 'Quicksand', sans-serif;
+	list-style: none;
+	margin-left: -3.5em;
+	margin-top: 2.5em;
+}
+
+.teams-list li {
+	font-family: 'Quicksand', sans-serif;
+	list-style: none;
+	margin-left: 4.75em;
+	margin-top: 2.5em;
+}
+
+.btn {
+	font-size: 1em;
+	font-family: 'Quicksand', sans-serif;
+	background-color: #fff;
+	text-align: center;
+	width: 100%;
+}
+
+.new-team {
+	margin-top: 2em;
+}
+
+#join-btn {
+	color: #000;
+}
+
+#new-team {
+	color: #000;
+}
+
+#new-team-btn {
+	width: auto;
+	color: #000;
+	width: 60%;
+	margin-top: 2em;
+	margin-left: 15%;
+	font-size: 1.2em;
+}
+
+.teammate-list {
+	margin-left: 70%;
+}
+
+.highcharts-legend-item text {
+	color: #fff;
+}

@@ -1,0 +1,23 @@
+<%= render "./users/tabs" %>
+
+  <div class="row">
+    <div class="col-md-4 col-md-offset-4 col-xs-12 log-show-container">
+      <%= form_for :log, url: log_path, method: :patch do |f| %>
+        <div>
+          <br>
+          <%= select_date Date.today, :prefix => :date %>
+        </div>
+        <br>
+        <div>
+          <%= f.number_field :mileage, placeholder: "Miles" %>
+        </div>
+        <div>
+          <%= f.hidden_field :user_id, value: session[:user_id] %>
+        </div>
+        <br>
+        <div class="btn">
+        <%= f.submit :class => "btn", :id => "save-edit-btn" %>
+        </div>
+      <% end %>
+    </div>
+  </div>

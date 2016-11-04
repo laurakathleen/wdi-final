@@ -1,0 +1,20 @@
+<%= render "./users/tabs" %>
+
+	<div class="row">
+		<div class="col-md-4 col-md-offset-4 col-xs-12 log-show-container">
+			<div class="weekday">
+			<%= @log.created_at.strftime("%A %d %B, %Y") %>
+			</div>
+			<hr>
+			<div class="miles-show">
+				<%= @log.mileage %> miles
+				<br>
+				<div class="row">
+					<div class="edit-delete-btns">
+						<span class="edit-dlt-btn" id="edit-btn"><%= link_to "Edit", edit_log_path(@log), class: "btn" %></span>
+						<span class="edit-dlt-btn" id="delete-btn"><%= button_to "Delete", @log, method: :delete, class: "btn delete-btn" %></span>
+					</div>
+				</div>
+			</div>
+		<div>
+	</div>

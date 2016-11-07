@@ -119,6 +119,10 @@
 	font-size: 2.25em;
 }
 
+.main-nav a {
+	text-decoration: none;
+}
+
 .main-nav ul li {
 	font-family: 'Quicksand', sans-serif;
 	font-weight: bolder;

@@ -14,7 +14,8 @@ class LogsController < ApplicationController
 
 	def create
 		@log = Log.create(log_params)
-		redirect_to user_logs_path
+		@user = User.find_by_id(params[:user_id])
+		redirect_to user_path(@user)
 	end
 
 	def show

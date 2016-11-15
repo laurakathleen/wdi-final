@@ -107,6 +107,22 @@ p {
 	margin: 0 auto;
 }
 
+#your-team-list li {
+	border: 1px solid #000;
+	border-radius: 3px;
+	height: 2em;
+	padding-top: 0.25em;
+}
+
+#your-team-list li:hover {
+	border: 2px solid #000;
+	color: #000;
+}
+
+#your-team-list li a:hover {
+	text-decoration: none;
+}
+
 /******High Charts******/
 
 .chart-container {

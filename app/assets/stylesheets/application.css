@@ -92,6 +92,15 @@
 	padding-top: 0.75em;
 }
 
+#new-user-card {
+	height: 27em;
+}
+
+#user-card-login {
+	height: 12em;
+	margin-top: 4.5em;
+}
+
 .user-card-fidgety {
 	background-color: #fff;
 	margin-top: 1em;

@@ -20,6 +20,10 @@ p {
 	width: 100%;
 }
 
+#new-user:hover {
+	border: 2px solid #2A2E30;
+}
+
 #list-user-info {
 	width: 60%;
 	margin-left: 20%;
@@ -33,6 +37,10 @@ p {
 
 #login-btn {
 	color: #000;
+}
+
+#login-btn:hover {
+	border: 2px solid #000;
 }
 
 #about-content {

@@ -125,6 +125,10 @@
 	color: #000;
 }
 
+#join-btn:hover {
+	border: 2px solid #2A2E30;
+}
+
 #new-team {
 	color: #000;
 }
@@ -136,6 +140,10 @@
 	margin-top: 2em;
 	margin-left: 15%;
 	font-size: 1.2em;
+}
+
+#new-team-btn:hover {
+	border: 2px solid #2A2E30;
 }
 
 .teammate-list {

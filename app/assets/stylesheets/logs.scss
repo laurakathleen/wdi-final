@@ -35,6 +35,12 @@
 #new-log-btn {
   width: 50%;
   border: 1px solid black;
+  color: #008080;
+}
+
+#new-log-btn:hover {
+  border: 2px solid #000;
+  color: #000;
 }
 
 /****** User Show ******/
@@ -87,15 +93,15 @@ table td {
     background: #73B9B9;
     color: #000;
     text-decoration: #fff;
-  }
+}
 
-  .next-month {
+.next-month {
     background: #B9DCDC;
-  }
+}
 
-  .prev-month {
+.prev-month {
   	background: #B9DCDC;
-  }
+}
 
 .simple-calendar {
   table {
@@ -143,7 +149,7 @@ table td {
     border-left-style: solid;
     border-left-width: 1px;
   }
- }
+}
 
 /******Logs Show******/
 .log-show-container {
@@ -176,8 +182,16 @@ table td {
   text-decoration: none;
 }
 
+#edit-btn:hover {
+  border: 2px solid black;
+}
+
 #edit-btn a {
   color: #008080;
+}
+
+#edit-btn a:hover {
+  color: #000;
 }
 
 #delete-btn {
@@ -185,8 +199,21 @@ table td {
   height: 2.5em;
 }
 
+#delete-btn:hover{
+  border: 2px solid black;
+}
+
+#delete-btn span:hover {
+  color: #008080;
+}
+
 #save-edit-btn {
   border: 1px solid #000;
   width: 40%;
   color: #008080;
+}
+
+#save-edit-btn:hover {
+  border: 2px solid #000;
+  color: #000;
 }

@@ -77,7 +77,10 @@
 	color: #fff;
  	text-decoration: none;
  	width: 30px;
+}
 
+.splash p:hover {
+	border: 2px solid #fff;
 }
 
 .user-card {

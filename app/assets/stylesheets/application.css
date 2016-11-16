@@ -93,7 +93,10 @@
 }
 
 #new-user-card {
-	height: 27em;
+	height: 70%;
+	font-size: 1.2em;
+	padding-top: 1em;
+	padding-bottom: 2em;
 }
 
 #user-card-login {

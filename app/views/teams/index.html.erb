@@ -6,7 +6,7 @@
 		<br>
 		<div class="teams-list">
 		<% @teams.each do |team| %>
-			<% if current_user && current_user.branch == team.branch && current_user.start_location == team.start_location && current_user.end_location == team.end_location%>
+			<% if current_user && current_user.branch == team.branch && current_user.start_location == team.start_location && current_user.end_location == team.end_location && team.valid? %>
 				<div class="teams-list-item">
 		    	<li><%= team.name %>
 		      	<%= button_to "Join", team_users_path(team), :class => "btn", :id => "join-btn" %></li>

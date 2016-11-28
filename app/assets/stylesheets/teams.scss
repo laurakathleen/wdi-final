@@ -165,3 +165,36 @@
 .highcharts-legend-item text {
 	color: #fff;
 }
+
+/****** Media Queries ******/
+@media only screen and (max-width: 480px) {
+    #team-info-card {
+	   margin-left: 1em;
+	   margin-right: 1em;
+	   width: auto;
+   }
+
+   #total-of-team {
+	   margin-left: 1em;
+	   margin-right: 1em;
+	   width: auto;
+   }
+
+   #teammate-div {
+	   margin-left: 1em;
+	   margin-right: 1em;
+	   width: auto;
+   }
+
+   #mileage-count {
+	   margin-left: 1em;
+	   margin-right: 1em;
+	   width: auto;
+   }
+
+   #countdown {
+	   margin-left: 1em;
+	   margin-right: 1em;
+	   width: auto;
+   }
+}

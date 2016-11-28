@@ -1,16 +1,15 @@
 <%= render "./users/tabs" %>
 <div class="container">
   <div class="row">
-    <div class="col-xs-6 col-md-4 team-card team-info-container third">
+    <div class="col-md-4 team-card team-info-container third" id="team-info-card">
       <p id="team-name"><%= @team.name %></p>
       <p><%= @team.branch %></p>
       <p><%= @team.start_location %></p>
       <p><%= @team.end_location %></p>
       <p>Team Goal: <%= @team.goal %> miles</p>
       <p>Timeframe: <%= @team.months %> months</p>
-      <%= button_to "Leave Team", @user, method: :delete,  :class => "btn", :id => "join-btn" %>
     </div>
-    <div class="col-xs-12 col-md-8 team-card" id="total-of-team">
+    <div class="col-md-8 team-card" id="total-of-team">
       <div class="chart-container">
         <div id="team-chart-wrapper"></div>
         </div>
@@ -20,7 +19,7 @@
 </div>
 <div class="container">
   <div class="row">
-    <div class="col-xs-6 col-md-4 team-card third" id="teammate-div">
+    <div class="col-md-4 team-card third" id="teammate-div">
       <ul id="teammate-info"> 
         <h3>Teammates</h3>
         <% @team.users.each do |tm| %>   
@@ -28,7 +27,7 @@
         <% end %>
       </ul>
     </div>
-    <div class="col-xs-6 col-md-4 team-card third" id="mileage-count">
+    <div class="col-md-4 team-card third" id="mileage-count">
       <h3>Total Team Mileage: </h3>
         <div id="total">
         </div>
@@ -37,7 +36,7 @@
         <h3>Miles to go: </h3>
         <span class="difference"></span>
     </div>
-    <div class="col-xs-6 col-md-4 team-card third" id="countdown">
+    <div class="col-md-4 team-card third" id="countdown">
       <div class="chart-container">
         <div id="miles-to-goal-container">
         </div>

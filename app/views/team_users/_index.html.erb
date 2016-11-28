@@ -1,9 +1,9 @@
 <ul id="your-team-list">
-  <% @teams.each do |team| %>   
+  	<% @teams.uniq.each do |team| %>
     <a href="<%= current_user.id %>/teams/<%= team.id %>">
     	<li class="team-link"><%= team.name %></li>
     </a>
-  <% end %>
+  	<% end %>
 </ul>
 
 

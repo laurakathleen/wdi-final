@@ -8,6 +8,7 @@
       <p><%= @team.end_location %></p>
       <p>Team Goal: <%= @team.goal %> miles</p>
       <p>Timeframe: <%= @team.months %> months</p>
+      <%= button_to "Leave Team", @user, method: :delete,  :class => "btn", :id => "join-btn" %>
     </div>
     <div class="col-xs-12 col-md-8 team-card" id="total-of-team">
       <div class="chart-container">

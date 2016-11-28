@@ -14,18 +14,20 @@
 }
 
 #total-of-team {
-	width: 66%;
+	max-width: 65%;
 	margin-left: 1em;
-
 }
 
 #teammate-div {
 	margin-right: 1em;
 }
 
+#mileage-count {
+	margin-right: 1em;
+}
+
 #countdown {
-	margin-left: 1em;
-	width: 33%;
+	max-width: 31.85%;
 }
 
 .team-info-container p {
@@ -164,37 +166,4 @@
 
 .highcharts-legend-item text {
 	color: #fff;
-}
-
-/****** Media Queries ******/
-@media only screen and (max-width: 480px) {
-    #team-info-card {
-	   margin-left: 1em;
-	   margin-right: 1em;
-	   width: auto;
-   }
-
-   #total-of-team {
-	   margin-left: 1em;
-	   margin-right: 1em;
-	   width: auto;
-   }
-
-   #teammate-div {
-	   margin-left: 1em;
-	   margin-right: 1em;
-	   width: auto;
-   }
-
-   #mileage-count {
-	   margin-left: 1em;
-	   margin-right: 1em;
-	   width: auto;
-   }
-
-   #countdown {
-	   margin-left: 1em;
-	   margin-right: 1em;
-	   width: auto;
-   }
 }

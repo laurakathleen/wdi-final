@@ -46,7 +46,7 @@
 	border: none;
 	text-align: center;
 	width: 60%;
-	margin-left: 21%;
+	margin-left: 20%;
 	margin-top: -22%;
 }
 
@@ -58,6 +58,7 @@
 	border: 1px solid #fff;
 	border-radius: 6px;
 	text-align: center;
+	font-family: 'PT sans', sans-serif;
 }
 
  #sign-up {

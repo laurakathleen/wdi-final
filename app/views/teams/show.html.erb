@@ -94,7 +94,8 @@ $(function () {
             name: '<%= tm.first_name%>',
             data: [<%= tm.logs.sum(:mileage) %>]
         },
-        <% end %>]
+        <% end %>
+        ]
     });
 });
 
@@ -134,10 +135,12 @@ $(function () {
                 colorByPoint: true,
                 data: [{
                     name: 'Miles Down',
-                    y: sum
+                    y: sum,
+                    color: '#26547C'
                 }, {
                     name: ['Miles To Go'],
-                    y: difference 
+                    y: difference,
+                    color: '#DF2935'
                 }]
             }]
         });

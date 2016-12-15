@@ -11,6 +11,10 @@ p {
 	font-size: 1.75em;
 }
 
+li {
+	text-decoration: none;
+}
+
 #site-title li a {
 	color: #73B9B9;
 }
@@ -54,9 +58,10 @@ p {
 
 #about-site {
 	color: #fff;
-	font-family: 'Quicksand', sans-serif;
+	font-family: 'PT sans', sans-serif;
 	margin-top: -5em;
 	font-size: 1.8em;
+	font-weight: lighter;
 }
 
 #splash {
@@ -86,7 +91,7 @@ p {
 }
 
 .user-tabs li {
-	margin-top: -2.5em;
+	margin-top: -1em;
 }
 
 .user-tabs li a {
@@ -173,23 +178,3 @@ tspan {
 	fill: #73B9B9;
 }
 
-/****** Media Queries ******/
-@media only screen and (max-width: 480px) {
-   #new-log-mileage {
-   		margin-left: 1em;
-   		margin-right: 1em;
-   		max-width: 93%;
-   } 
-
-   #users-teams {
-	   margin-left: 1em;
-	   margin-right: 1em;
-	   width: auto;
-   }
-
-   #user-totals {
-	   margin-left: 1em;
-	   margin-right: 1em;
-	   width: auto;
-   }
-}

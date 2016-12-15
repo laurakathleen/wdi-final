@@ -1,7 +1,7 @@
 <%= render "tabs" %>
 <div class="container">
   <div class="row">
-      <div class="col-md-8">
+      <div class="col-md-8 col-xs-12">
         <div class="chart-container">
           <div class="user-chart user-card" id="user-daily-container">
           </div>
@@ -12,19 +12,19 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-md-4">
+      <div class="col-md-4 col-xs-12">
         <div class="chart-container">
           <div class="user-chart user-card" id="user-total-container">
           </div>
         </div>
       </div>
-      <div class="col-md-4 user-card-fidgety" id="users-teams">
+      <div class="col-md-4 col-xs-12 user-card-fidgety" id="users-teams">
         <div class="my-teams-container">
           <p>My teams</p>
           <p class="btn"><%= render "./team_users/index" %></p>
         </div>
       </div>
-      <div class="col-md-4 user-card" id="user-totals">
+      <div class="col-md-4 col-xs-12 user-card" id="user-totals">
         <p><%= @user.first_name %>'s total mileage: <span class="bold" id="user-total"><%= @user.logs.sum(:mileage) %></span><span class="bold"> miles</p>
         <p>Total today: <span class="bold" id="user-daily"><%= @user.logs.where(date: Date.today).sum(:mileage) %></span><span class="bold"> miles</p>
       </div>
@@ -92,7 +92,8 @@ $(function () {
         },
         series: [{
             name: [userFirstName],
-            data: [userDaily]
+            data: [userDaily],
+            color: '#777ccc'
         }]
     });
 });
@@ -129,7 +130,8 @@ $(function () {
         },
         series: [{
             name: [userFirstName],
-            data: [userTotal]
+            data: [userTotal],
+            color: '#BC2C1A'
         }]
     });
 });

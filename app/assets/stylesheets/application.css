@@ -20,19 +20,20 @@
 }
 
 .heading {
-	margin-top: -40%;
+	margin-top: -30%;
 	text-align: center;
+	text-shadow: 1px 1px 1px #000000;
 }
 
 .heading h2 {
 	color: #fff;
-	font-family: 'Quicksand', sans-serif;
+	font-family: 'PT sans', sans-serif;
 	font-size: 4em;
 }
 
 .heading h4 {
 	color: #fff;
-	font-family: 'Quicksand', sans-serif;
+	font-family: 'PT sans', sans-serif;
 	font-size: 2.4em;
 }
 
@@ -46,7 +47,7 @@
 	text-align: center;
 	width: 60%;
 	margin-left: 21%;
-	margin-top: -28%;
+	margin-top: -22%;
 }
 
 .splash p {
@@ -77,6 +78,11 @@
 	color: #fff;
  	text-decoration: none;
  	width: 30px;
+}
+
+#splash {
+	max-height: 110vh;
+	width: 100%;
 }
 
 .splash p:hover {

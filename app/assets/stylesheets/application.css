@@ -15,6 +15,46 @@
  *= require_self
  */
 
+#splash-page-nav-container {
+	position: absolute;
+	z-index: 5;
+	margin-top: 1%;
+	min-width: 100%;
+	font-family: 'Quicksand', sans-serif;
+}
+
+#splash-page-nav-container a:hover {
+	text-decoration: none;
+}
+
+#splash-title {
+	margin-top: 5%;
+	color: #73B9B9;
+	font-size: 2.25em;
+}
+
+.splash-page-nav-ul {
+	list-style: none;
+	position: relative;
+	margin-top: -9.5%;
+}
+
+.splash-page-nav-ul li {
+	display: inline;
+	padding-right: 8%;
+	font-size: 1.5em;
+}
+
+.splash-page-nav-ul li a:hover {
+	color: #73B9B9;
+	text-decoration: none;
+}
+
+.splash-msg p {
+	margin-left: 26%;
+	margin-top: -1%;
+}
+
 .about-content {
 	width: 100%;
 }
@@ -40,6 +80,7 @@
 .splash-row {
 	padding-top: 2%;
 	margin-top: 6.2%;
+	text-shadow: 1px 1px 1px #000000;
 }
 
 #splash-page-div {

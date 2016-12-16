@@ -12,6 +12,13 @@
 }
 
 /****** New Log Form ******/
+@media only screen and (min-width: 300px)  and (max-device-width: 680px){
+  #new-log-mileage {
+    margin-left: 2%;
+    max-width: 96%;
+  }
+}
+
 #new-log-form {
   padding-bottom: 0.75em;
   text-align: center;

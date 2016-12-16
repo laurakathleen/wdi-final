@@ -45,6 +45,17 @@ p {
 	color: #000;
 }
 
+@media only screen and (min-width: 300px)  and (max-device-width: 680px){
+  #users-teams {
+    margin-left: 2%;
+    width: 96%;
+  }
+  div#user-totals {
+  	width: 96%;
+  	text-align: center;
+  }
+}
+
 #login-btn {
 	color: #000;
 	font-size: 1.2em;
@@ -66,7 +77,6 @@ p {
 
 #about-site {
 	color: #fff;
-	font-family: 'PT sans', sans-serif;
 }
 
 #splash {

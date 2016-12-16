@@ -164,6 +164,23 @@
 	margin-left: 70%;
 }
 
+@media only screen and (min-width: 300px) and (max-device-width: 680px){
+  div.team-card {
+  	width: 100%;
+  }
+  div#countdown {
+  	position: absolute;
+    width: 600px;
+    left: 0;
+    margin-top: 62%;
+    margin-left: 11.5%;
+  }
+  .teams-list {
+  	width: 67%;
+  	margin-left: 13%;
+  }
+}
+
 .highcharts-legend-item text {
 	color: #fff;
 }

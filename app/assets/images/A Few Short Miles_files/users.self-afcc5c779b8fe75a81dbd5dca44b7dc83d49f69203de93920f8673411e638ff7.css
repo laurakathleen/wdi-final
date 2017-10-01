@@ -1,0 +1,209 @@
+/* line 5, /Users/kevinrussell/wdi-dev/wdi-final/app/assets/stylesheets/users.scss */
+body {
+  background-color: #2A2E30;
+}
+
+/* line 9, /Users/kevinrussell/wdi-dev/wdi-final/app/assets/stylesheets/users.scss */
+p {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.75em;
+}
+
+/* line 14, /Users/kevinrussell/wdi-dev/wdi-final/app/assets/stylesheets/users.scss */
+#footer {
+  background-color: #fff;
+  margin-top: 30%;
+  margin-bottom: 0;
+  padding-top: 15px;
+  height: 10vh;
+  text-align: center;
+  font-size: 0.75em;
+}
+
+/* line 24, /Users/kevinrussell/wdi-dev/wdi-final/app/assets/stylesheets/users.scss */
+#site-title li a {
+  color: #73B9B9;
+}
+
+/* line 28, /Users/kevinrussell/wdi-dev/wdi-final/app/assets/stylesheets/users.scss */
+#new-user {
+  color: #000;
+  width: 100%;
+}
+
+/* line 33, /Users/kevinrussell/wdi-dev/wdi-final/app/assets/stylesheets/users.scss */
+#new-user:hover {
+  border: 2px solid #2A2E30;
+}
+
+/* line 37, /Users/kevinrussell/wdi-dev/wdi-final/app/assets/stylesheets/users.scss */
+#list-user-info {
+  width: 60%;
+  margin-left: 20%;
+  text-align: center;
+  color: #73B9B9;
+}
+
+/* line 44, /Users/kevinrussell/wdi-dev/wdi-final/app/assets/stylesheets/users.scss */
+#users-teams {
+  color: #000;
+}
+
+@media only screen and (min-width: 300px) and (max-device-width: 680px) {
+  /* line 49, /Users/kevinrussell/wdi-dev/wdi-final/app/assets/stylesheets/users.scss */
+  #users-teams {
+    margin-left: 2%;
+    width: 96%;
+  }
+
+  /* line 53, /Users/kevinrussell/wdi-dev/wdi-final/app/assets/stylesheets/users.scss */
+  div#user-totals {
+    width: 96%;
+    text-align: center;
+  }
+}
+/* line 59, /Users/kevinrussell/wdi-dev/wdi-final/app/assets/stylesheets/users.scss */
+#login-btn {
+  color: #000;
+  font-size: 1.2em;
+}
+
+/* line 64, /Users/kevinrussell/wdi-dev/wdi-final/app/assets/stylesheets/users.scss */
+#login-btn:hover {
+  border: 2px solid #000;
+}
+
+/* line 68, /Users/kevinrussell/wdi-dev/wdi-final/app/assets/stylesheets/users.scss */
+#splash {
+  margin-top: -1.3em;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 74, /Users/kevinrussell/wdi-dev/wdi-final/app/assets/stylesheets/users.scss */
+.splash-btn {
+  display: block;
+  margin-top: -28em;
+  border: 1px solid #fff;
+}
+
+/* line 80, /Users/kevinrussell/wdi-dev/wdi-final/app/assets/stylesheets/users.scss */
+.navbar-right li a {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.25em;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* line 87, /Users/kevinrussell/wdi-dev/wdi-final/app/assets/stylesheets/users.scss */
+.user-tabs {
+  height: 1.75em;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+/* line 94, /Users/kevinrussell/wdi-dev/wdi-final/app/assets/stylesheets/users.scss */
+.user-tabs li {
+  margin-top: -1em;
+}
+
+/* line 98, /Users/kevinrussell/wdi-dev/wdi-final/app/assets/stylesheets/users.scss */
+.user-tabs li a {
+  color: #008080;
+}
+
+/* line 102, /Users/kevinrussell/wdi-dev/wdi-final/app/assets/stylesheets/users.scss */
+.user-chart {
+  height: 150px;
+}
+
+/* line 106, /Users/kevinrussell/wdi-dev/wdi-final/app/assets/stylesheets/users.scss */
+.bold {
+  color: #008080;
+  font-weight: bolder;
+}
+
+/* line 111, /Users/kevinrussell/wdi-dev/wdi-final/app/assets/stylesheets/users.scss */
+.my-teams-container {
+  width: 90%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* line 117, /Users/kevinrussell/wdi-dev/wdi-final/app/assets/stylesheets/users.scss */
+#your-team-list li {
+  border: 1px solid #000;
+  border-radius: 3px;
+  height: 2em;
+  padding-top: 0.25em;
+}
+
+/* line 124, /Users/kevinrussell/wdi-dev/wdi-final/app/assets/stylesheets/users.scss */
+#your-team-list li:hover {
+  border: 2px solid #000;
+  color: #000;
+  text-decoration: none;
+}
+
+/* line 130, /Users/kevinrussell/wdi-dev/wdi-final/app/assets/stylesheets/users.scss */
+#your-team-list li a:hover {
+  text-decoration: none;
+}
+
+/******High Charts******/
+/* line 136, /Users/kevinrussell/wdi-dev/wdi-final/app/assets/stylesheets/users.scss */
+.chart-container {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 6px;
+  height: 15em;
+  margin-top: 1em;
+}
+
+/* line 144, /Users/kevinrussell/wdi-dev/wdi-final/app/assets/stylesheets/users.scss */
+#user-daily-container {
+  width: 90%;
+  height: 97%;
+  margin: 1em auto;
+}
+
+/* line 150, /Users/kevinrussell/wdi-dev/wdi-final/app/assets/stylesheets/users.scss */
+#user-total-container {
+  width: 90%;
+  height: 97%;
+  margin: 1em auto;
+}
+
+/* line 156, /Users/kevinrussell/wdi-dev/wdi-final/app/assets/stylesheets/users.scss */
+#user-totals {
+  margin-right: 0;
+  margin-left: 1em;
+  width: 33.4%;
+}
+
+/* line 162, /Users/kevinrussell/wdi-dev/wdi-final/app/assets/stylesheets/users.scss */
+#user-totals p {
+  font-size: 1.3em;
+}
+
+/* line 166, /Users/kevinrussell/wdi-dev/wdi-final/app/assets/stylesheets/users.scss */
+.highcharts-background {
+  fill: #fff;
+}
+
+/* line 170, /Users/kevinrussell/wdi-dev/wdi-final/app/assets/stylesheets/users.scss */
+tspan {
+  fill: #000;
+  font-family: 'Quicksand', sans-serif;
+}
+
+/* line 175, /Users/kevinrussell/wdi-dev/wdi-final/app/assets/stylesheets/users.scss */
+.highcharts-axis-title {
+  color: #fff;
+}
+
+/* line 179, /Users/kevinrussell/wdi-dev/wdi-final/app/assets/stylesheets/users.scss */
+.highcharts-series highcharts-series-0 highcharts-tracker {
+  fill: #73B9B9;
+}

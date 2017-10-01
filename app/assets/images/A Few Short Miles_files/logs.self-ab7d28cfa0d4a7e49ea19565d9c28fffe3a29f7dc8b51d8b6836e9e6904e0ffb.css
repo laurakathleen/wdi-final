@@ -1,0 +1,249 @@
+/* line 6, /Users/kevinrussell/wdi-dev/wdi-final/app/assets/stylesheets/logs.scss */
+#log {
+  text-align: center;
+  margin: 0 auto;
+  border: 1px solid black;
+  width: 50%;
+  list-style: none;
+}
+
+/****** New Log Form ******/
+@media only screen and (min-width: 300px) and (max-device-width: 680px) {
+  /* line 16, /Users/kevinrussell/wdi-dev/wdi-final/app/assets/stylesheets/logs.scss */
+  #new-log-mileage {
+    margin-left: 2%;
+    max-width: 96%;
+  }
+}
+/* line 22, /Users/kevinrussell/wdi-dev/wdi-final/app/assets/stylesheets/logs.scss */
+#new-log-form {
+  padding-bottom: 0.75em;
+  text-align: center;
+}
+
+/* line 27, /Users/kevinrussell/wdi-dev/wdi-final/app/assets/stylesheets/logs.scss */
+#new-log-form-mileage {
+  margin: 0 auto;
+  width: 50%;
+}
+
+/* line 32, /Users/kevinrussell/wdi-dev/wdi-final/app/assets/stylesheets/logs.scss */
+.form {
+  margin-top: 5em;
+  color: #fff;
+  font-family: 'Quicksand', sans-serif;
+}
+
+/* line 38, /Users/kevinrussell/wdi-dev/wdi-final/app/assets/stylesheets/logs.scss */
+.select-field {
+  color: #000;
+}
+
+/* line 42, /Users/kevinrussell/wdi-dev/wdi-final/app/assets/stylesheets/logs.scss */
+#new-log-btn {
+  width: 50%;
+  border: 1px solid black;
+  color: #008080;
+  font-size: 1.2em;
+}
+
+/* line 49, /Users/kevinrussell/wdi-dev/wdi-final/app/assets/stylesheets/logs.scss */
+#new-log-btn:hover {
+  border: 2px solid #000;
+  color: #000;
+}
+
+/****** User Show ******/
+/* line 55, /Users/kevinrussell/wdi-dev/wdi-final/app/assets/stylesheets/logs.scss */
+#user-history {
+  background-color: #fff;
+  text-align: center;
+}
+
+/* line 60, /Users/kevinrussell/wdi-dev/wdi-final/app/assets/stylesheets/logs.scss */
+#user-history li {
+  list-style: none;
+  padding-top: 1em;
+}
+
+/****** Calendar ******/
+/* line 67, /Users/kevinrussell/wdi-dev/wdi-final/app/assets/stylesheets/logs.scss */
+.calendar-top {
+  margin-top: 1em;
+}
+
+/* line 71, /Users/kevinrussell/wdi-dev/wdi-final/app/assets/stylesheets/logs.scss */
+.calendar-container {
+  background-color: #fff;
+  overflow-y: auto;
+  font-family: 'Quicksand', sans-serif;
+  border-radius: 0.6%;
+}
+
+/* line 78, /Users/kevinrussell/wdi-dev/wdi-final/app/assets/stylesheets/logs.scss */
+.calendar-title {
+  padding-left: 11em;
+  padding-right: 11em;
+  font-size: 2em;
+  font-family: 'Quicksand', sans-serif;
+}
+
+/* line 85, /Users/kevinrussell/wdi-dev/wdi-final/app/assets/stylesheets/logs.scss */
+.calendar-square {
+  text-align: center;
+  height: 30em;
+}
+
+/* line 90, /Users/kevinrussell/wdi-dev/wdi-final/app/assets/stylesheets/logs.scss */
+table td {
+  border: 1px solid black;
+  height: 4.5em;
+  width: 3em;
+}
+
+/* line 96, /Users/kevinrussell/wdi-dev/wdi-final/app/assets/stylesheets/logs.scss */
+#calendar-hr {
+  margin-top: -0.15em;
+}
+
+/* line 100, /Users/kevinrussell/wdi-dev/wdi-final/app/assets/stylesheets/logs.scss */
+.today {
+  background: #73B9B9;
+  color: #000;
+  text-decoration: #fff;
+}
+
+/* line 106, /Users/kevinrussell/wdi-dev/wdi-final/app/assets/stylesheets/logs.scss */
+.next-month {
+  background: #B9DCDC;
+}
+
+/* line 110, /Users/kevinrussell/wdi-dev/wdi-final/app/assets/stylesheets/logs.scss */
+.prev-month {
+  background: #B9DCDC;
+}
+
+/* line 115, /Users/kevinrussell/wdi-dev/wdi-final/app/assets/stylesheets/logs.scss */
+.simple-calendar table {
+  -webkit-border-horizontal-spacing: 0px;
+  -webkit-border-vertical-spacing: 0px;
+  background-color: transparent;
+  border: 1px solid #dddddd;
+  border-collapse: collapse;
+  box-sizing: border-box;
+  max-width: 100%;
+  width: 100%;
+}
+/* line 126, /Users/kevinrussell/wdi-dev/wdi-final/app/assets/stylesheets/logs.scss */
+.simple-calendar tr {
+  border-collapse: collapse;
+}
+/* line 130, /Users/kevinrussell/wdi-dev/wdi-final/app/assets/stylesheets/logs.scss */
+.simple-calendar th {
+  padding: 6px;
+  border-bottom: 2px solid #dddddd;
+  border-collapse: collapse;
+  border-left: 1px solid #dddddd;
+  border-right: 1px solid #dddddd;
+  border-top: 0px none #333333;
+  box-sizing: border-box;
+  text-align: left;
+}
+/* line 141, /Users/kevinrussell/wdi-dev/wdi-final/app/assets/stylesheets/logs.scss */
+.simple-calendar td {
+  padding: 6px;
+  vertical-align: top;
+  width: 14%;
+  border: 1px solid #ddd;
+  border-top-color: #dddddd;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-right-color: #dddddd;
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-bottom-color: #dddddd;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-left-color: #dddddd;
+  border-left-style: solid;
+  border-left-width: 1px;
+}
+
+/******Logs Show******/
+/* line 163, /Users/kevinrussell/wdi-dev/wdi-final/app/assets/stylesheets/logs.scss */
+.log-show-container {
+  background-color: #fff;
+  margin-top: 5%;
+  padding-top: 2%;
+  padding-bottom: 1%;
+  border-radius: 2%;
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.2em;
+}
+
+/* line 174, /Users/kevinrussell/wdi-dev/wdi-final/app/assets/stylesheets/logs.scss */
+.edit-delete-btns {
+  display: inline-block;
+  width: 50%;
+}
+
+/* line 179, /Users/kevinrussell/wdi-dev/wdi-final/app/assets/stylesheets/logs.scss */
+.edit-dlt-btn {
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 6%;
+  margin-top: 1.25em;
+  color: #008080;
+}
+
+/* line 187, /Users/kevinrussell/wdi-dev/wdi-final/app/assets/stylesheets/logs.scss */
+#edit-btn {
+  width: 5em;
+  height: 2.5em;
+  text-decoration: none;
+}
+
+/* line 193, /Users/kevinrussell/wdi-dev/wdi-final/app/assets/stylesheets/logs.scss */
+#edit-btn:hover {
+  border: 2px solid black;
+}
+
+/* line 197, /Users/kevinrussell/wdi-dev/wdi-final/app/assets/stylesheets/logs.scss */
+#edit-btn a {
+  color: #008080;
+}
+
+/* line 201, /Users/kevinrussell/wdi-dev/wdi-final/app/assets/stylesheets/logs.scss */
+#edit-btn a:hover {
+  color: #000;
+}
+
+/* line 205, /Users/kevinrussell/wdi-dev/wdi-final/app/assets/stylesheets/logs.scss */
+#delete-btn {
+  width: 5em;
+  height: 2.5em;
+}
+
+/* line 210, /Users/kevinrussell/wdi-dev/wdi-final/app/assets/stylesheets/logs.scss */
+#delete-btn:hover {
+  border: 2px solid black;
+}
+
+/* line 214, /Users/kevinrussell/wdi-dev/wdi-final/app/assets/stylesheets/logs.scss */
+#delete-btn span:hover {
+  color: #008080;
+}
+
+/* line 218, /Users/kevinrussell/wdi-dev/wdi-final/app/assets/stylesheets/logs.scss */
+#save-edit-btn {
+  border: 1px solid #000;
+  width: 40%;
+  color: #008080;
+}
+
+/* line 224, /Users/kevinrussell/wdi-dev/wdi-final/app/assets/stylesheets/logs.scss */
+#save-edit-btn:hover {
+  border: 2px solid #000;
+  color: #000;
+}

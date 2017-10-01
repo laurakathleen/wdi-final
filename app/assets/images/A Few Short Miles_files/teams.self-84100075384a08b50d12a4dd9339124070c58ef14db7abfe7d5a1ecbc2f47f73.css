@@ -1,0 +1,224 @@
+/******Teams show******/
+/* line 8, /Users/kevinrussell/wdi-dev/wdi-final/app/assets/stylesheets/teams.scss */
+.team-show {
+  color: #fff;
+  font-family: 'Quicksand', sans-serif;
+}
+
+/* line 13, /Users/kevinrussell/wdi-dev/wdi-final/app/assets/stylesheets/teams.scss */
+.team-show ul li {
+  list-style: none;
+}
+
+/* line 17, /Users/kevinrussell/wdi-dev/wdi-final/app/assets/stylesheets/teams.scss */
+#total-of-team {
+  max-width: 65%;
+  margin-left: 1em;
+}
+
+/* line 22, /Users/kevinrussell/wdi-dev/wdi-final/app/assets/stylesheets/teams.scss */
+#teammate-div {
+  margin-right: 1em;
+}
+
+/* line 26, /Users/kevinrussell/wdi-dev/wdi-final/app/assets/stylesheets/teams.scss */
+#mileage-count {
+  margin-right: 1em;
+}
+
+/* line 30, /Users/kevinrussell/wdi-dev/wdi-final/app/assets/stylesheets/teams.scss */
+#countdown {
+  max-width: 31.85%;
+}
+
+/* line 34, /Users/kevinrussell/wdi-dev/wdi-final/app/assets/stylesheets/teams.scss */
+.team-info-container p {
+  font-size: 1.3em;
+  text-align: center;
+  color: #000;
+}
+
+/* line 40, /Users/kevinrussell/wdi-dev/wdi-final/app/assets/stylesheets/teams.scss */
+#teammate-info {
+  list-style: none;
+  text-align: center;
+  margin-left: -2em;
+  color: #000;
+  font-size: 1.3em;
+  font-family: 'Quicksand', sans-serif;
+}
+
+/* line 49, /Users/kevinrussell/wdi-dev/wdi-final/app/assets/stylesheets/teams.scss */
+#teammate-info h3 {
+  font-size: 1.5em;
+}
+
+/* line 53, /Users/kevinrussell/wdi-dev/wdi-final/app/assets/stylesheets/teams.scss */
+#mileage-count {
+  font-family: 'Quicksand', sans-serif;
+}
+
+/* line 57, /Users/kevinrussell/wdi-dev/wdi-final/app/assets/stylesheets/teams.scss */
+#mileage-count h3 {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+/* line 62, /Users/kevinrussell/wdi-dev/wdi-final/app/assets/stylesheets/teams.scss */
+#total {
+  font-size: 2em;
+  color: #008080;
+}
+
+/* line 67, /Users/kevinrussell/wdi-dev/wdi-final/app/assets/stylesheets/teams.scss */
+.difference {
+  font-size: 2em;
+  margin-left: 5em;
+  color: #008080;
+}
+
+/* line 73, /Users/kevinrussell/wdi-dev/wdi-final/app/assets/stylesheets/teams.scss */
+#hide-goal {
+  display: none;
+}
+
+/* line 77, /Users/kevinrussell/wdi-dev/wdi-final/app/assets/stylesheets/teams.scss */
+#total {
+  text-align: center;
+}
+
+/* line 81, /Users/kevinrussell/wdi-dev/wdi-final/app/assets/stylesheets/teams.scss */
+#team-name {
+  font-size: 1.7em;
+  color: #008080;
+}
+
+/* line 86, /Users/kevinrussell/wdi-dev/wdi-final/app/assets/stylesheets/teams.scss */
+#team-chart-wrapper {
+  width: 90%;
+  margin: -1.75em auto;
+  height: 15em;
+}
+
+/* line 92, /Users/kevinrussell/wdi-dev/wdi-final/app/assets/stylesheets/teams.scss */
+#miles-to-goal-container {
+  width: 90%;
+  height: 19em;
+  margin: -1.75em auto;
+}
+
+/* line 98, /Users/kevinrussell/wdi-dev/wdi-final/app/assets/stylesheets/teams.scss */
+.teams-list-item {
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+  list-style: none;
+  margin-left: -3.5em;
+  margin-top: 2.5em;
+}
+
+/* line 108, /Users/kevinrussell/wdi-dev/wdi-final/app/assets/stylesheets/teams.scss */
+.teams-list li {
+  font-family: 'Quicksand', sans-serif;
+  list-style: none;
+  margin-left: 4.75em;
+  margin-top: 2.5em;
+}
+
+/* line 115, /Users/kevinrussell/wdi-dev/wdi-final/app/assets/stylesheets/teams.scss */
+.btn {
+  font-size: 1em;
+  font-family: 'Quicksand', sans-serif;
+  background-color: #fff;
+  text-align: center;
+  width: 100%;
+}
+
+/* line 123, /Users/kevinrussell/wdi-dev/wdi-final/app/assets/stylesheets/teams.scss */
+.new-team {
+  margin-top: 2em;
+}
+
+/* line 127, /Users/kevinrussell/wdi-dev/wdi-final/app/assets/stylesheets/teams.scss */
+#join-btn {
+  color: #000;
+}
+
+/* line 131, /Users/kevinrussell/wdi-dev/wdi-final/app/assets/stylesheets/teams.scss */
+#join-btn:hover {
+  border: 2px solid #2A2E30;
+}
+
+/* line 135, /Users/kevinrussell/wdi-dev/wdi-final/app/assets/stylesheets/teams.scss */
+#new-team {
+  color: #000;
+}
+
+/* line 139, /Users/kevinrussell/wdi-dev/wdi-final/app/assets/stylesheets/teams.scss */
+#new-team:hover {
+  border: 2px solid #2A2E30;
+}
+
+/* line 143, /Users/kevinrussell/wdi-dev/wdi-final/app/assets/stylesheets/teams.scss */
+#new-team-card {
+  height: 50%;
+  margin-top: 4.5em;
+  padding-top: 1em;
+  padding-bottom: 2em;
+  font-size: 1.2em;
+}
+
+/* line 151, /Users/kevinrussell/wdi-dev/wdi-final/app/assets/stylesheets/teams.scss */
+#new-team-btn {
+  width: auto;
+  color: #000;
+  width: 60%;
+  margin-top: 2em;
+  margin-left: 15%;
+  font-size: 1.2em;
+}
+
+/* line 160, /Users/kevinrussell/wdi-dev/wdi-final/app/assets/stylesheets/teams.scss */
+#new-team-btn:hover {
+  border: 2px solid #2A2E30;
+}
+
+/* line 164, /Users/kevinrussell/wdi-dev/wdi-final/app/assets/stylesheets/teams.scss */
+.teammate-list {
+  margin-left: 70%;
+}
+
+@media only screen and (min-width: 300px) and (max-device-width: 680px) {
+  /* line 169, /Users/kevinrussell/wdi-dev/wdi-final/app/assets/stylesheets/teams.scss */
+  div.team-card {
+    width: 100%;
+  }
+
+  /* line 172, /Users/kevinrussell/wdi-dev/wdi-final/app/assets/stylesheets/teams.scss */
+  div#total-of-team {
+    min-width: 100%;
+    margin-left: 0;
+  }
+
+  /* line 176, /Users/kevinrussell/wdi-dev/wdi-final/app/assets/stylesheets/teams.scss */
+  div#countdown {
+    min-width: 100%;
+  }
+
+  /* line 179, /Users/kevinrussell/wdi-dev/wdi-final/app/assets/stylesheets/teams.scss */
+  .teams-list {
+    width: 67%;
+    margin-left: 13%;
+  }
+
+  /* line 183, /Users/kevinrussell/wdi-dev/wdi-final/app/assets/stylesheets/teams.scss */
+  span.difference {
+    width: 100%;
+    margin-left: 45%;
+  }
+}
+/* line 189, /Users/kevinrussell/wdi-dev/wdi-final/app/assets/stylesheets/teams.scss */
+.highcharts-legend-item text {
+  color: #fff;
+}

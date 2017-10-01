@@ -10,24 +10,14 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
- *= require bootstrap-3.3.7.min
- *= require_tree .
- *= require_self
+
+
+
  */
+
 
 .navbar-inverse {
 	z-index: 1000;
-}
-
-.splash-container {
-	margin: 0 auto;
-	max-width: 100%;
-}
-
-.splash{
-	background-image: url('../images/mountain-background.jpg');
-	min-width: 100vw;
-	min-height: 100vh;
 }
 
 .heading {
@@ -36,7 +26,7 @@
 	z-index: 3;
 	position: absolute;
 	width: 80%;
-	top: 18em;
+	top: 48%;
 	left: 10%;
 }
 
@@ -52,12 +42,29 @@
 	font-size: 2.4em;
 }
 
+.splash-row {
+	padding-top: 2%;
+	margin-top: 6.2%;
+	text-shadow: 1px 1px 1px #000000;
+}
+
+.splash p {
+	display: inline;
+	padding: 0.5em;
+	color: #fff;
+	text-decoration: none;
+	border: 1px solid #fff;
+	border-radius: 6px;
+	text-align: center;
+	font-family: 'PT sans', sans-serif;
+}
+
 #splash {
 	width: 24%;
 	height: auto;
 	position: relative;
 	z-index: 2;
-	margin-top: 4em;
+	margin-top: 254px;
 	margin-left: 38%;
 }
 
@@ -154,13 +161,10 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: 'Quicksand', sans-serif;
 }
 
-
-@media only screen and (min-width: 300px) and (max-device-width: 680px){
-	#splash {
-		margin-top: 32em;
-	}
-
-	.heading {
-		margin-top: 26em;
+@media only screen and (min-width: 300px)  and (max-device-width: 680px){
+	#splash-background {
+		min-height: 100vh;
+		width: auto;
+		overflow-x: hidden;
 	}
 }

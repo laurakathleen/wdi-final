@@ -1,0 +1,31 @@
+/* line 7, /Users/kevinrussell/wdi-dev/wdi-final/app/assets/stylesheets/team_users.scss */
+#total {
+  font-size: 3em;
+  color: #008080;
+}
+
+/* line 12, /Users/kevinrussell/wdi-dev/wdi-final/app/assets/stylesheets/team_users.scss */
+.users-teams {
+  padding-top: 0.75em;
+}
+
+/* line 16, /Users/kevinrussell/wdi-dev/wdi-final/app/assets/stylesheets/team_users.scss */
+.users-teams ul li {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.3em;
+  color: #000;
+}
+
+/* line 22, /Users/kevinrussell/wdi-dev/wdi-final/app/assets/stylesheets/team_users.scss */
+#your-team-list {
+  list-style: none;
+  font-family: 'Quicksand', sans-serif;
+}
+
+/* line 27, /Users/kevinrussell/wdi-dev/wdi-final/app/assets/stylesheets/team_users.scss */
+#your-team-list li {
+  font-size: 1.2em;
+  text-align: center;
+  color: #008080;
+  margin-left: -1em;
+}
